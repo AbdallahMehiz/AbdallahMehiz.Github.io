@@ -14,9 +14,9 @@
   <body>
     <div id="app"></div>
     <script>
-      const faviconelement = document.getElementById("favicon");
-      const isLight = window.matchMedia("(prefers-color-scheme: light)");
-      if (isLight.matches) faviconelement.href = "/public/favicon_black.svg";
+      // if light theme, apply the black favicon
+      if (window.matchMedia("(prefers-color-scheme: light)").matches)
+        document.getElementById("favicon").href = "/public/favicon_black.svg";
     </script>
     <script type="module" src="/src/main.js"></script>
   </body>
