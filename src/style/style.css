@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+body {
+  text-decoration: none;
+}
+
 :root {
   background-color: rgb(168, 164, 136);
-  text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
 
