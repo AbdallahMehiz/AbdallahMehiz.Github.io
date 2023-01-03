@@ -5,8 +5,3 @@
   align-items: center;
   grid-area: nav;
 }
-
-.navbar a {
-  text-decoration: none;
-  color: rgb(75, 72, 64);
-}
