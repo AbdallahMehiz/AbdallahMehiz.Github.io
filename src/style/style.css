@@ -42,11 +42,6 @@ body {
   color: #454138;
 }
 
-:root {
-  background-color: rgb(168, 164, 136);
-  font-family: "Open Sans", sans-serif;
-}
-
 #app {
   display: grid;
   height: 100vh;
@@ -64,4 +59,8 @@ h1 {
   text-align: center;
   font-size: 3em;
   color: rgb(75, 72, 64);
+}
+
+button {
+  color: wheat;
 }

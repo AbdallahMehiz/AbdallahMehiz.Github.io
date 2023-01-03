@@ -1,4 +1,4 @@
-<template><h1>Placeholder view</h1></template>
+<template><h1></h1></template>
 
 <script>
 export default {
