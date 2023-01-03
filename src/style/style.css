@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+:root {
+  background-color: rgb(168, 164, 136);
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+#app {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 50px auto auto auto;
+  grid-template-areas:
+    "...  nav nav nav nav nav nav nav nav ..."
+    "...  main main main main main main main main ..."
+    "...  main main main main main main main main ..."
+    "...  main main main main main main main main ...";
+}
+
+h1 {
+  grid-area: main;
+  text-align: center;
+  font-size: 3em;
+  color: rgb(75, 72, 64);
+}
