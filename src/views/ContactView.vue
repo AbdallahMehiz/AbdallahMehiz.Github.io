@@ -1,6 +1,7 @@
 <template>
   <div class="ContactView">
     <h1>socials page</h1>
+    <EarlyDevNotice class="DevNotice" />
     <FigureComponent class="notice" />
     <div class="socials">
       <SocialComponent />
@@ -24,17 +25,21 @@
 <script>
 import FigureComponent from "../components/FigureComponent.vue";
 import SocialComponent from "../components/SocialComponent.vue";
+import EarlyDevNotice from "../components/EarlyDevNotice.vue";
 
 export default {
   name: "ContactView",
   setup() {
     return {};
   },
-  components: { FigureComponent, SocialComponent },
+  components: { FigureComponent, SocialComponent, EarlyDevNotice },
 };
 </script>
 
 <style>
+.DevNotice {
+  grid-area: DevNotice;
+}
 h1 {
   grid-area: header;
 }
@@ -53,7 +58,7 @@ h1 {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "header header header ... ... ... ... ..."
+    "header header header ... ... DevNotice DevNotice DevNotice"
     "notice notice notice notice notice notice notice notice"
     "socials socials socials socials socials socials socials socials";
   overflow: scroll;

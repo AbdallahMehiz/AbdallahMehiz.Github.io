@@ -4,8 +4,8 @@ import ContactView from "./views/ContactView.vue";
 </script>
 
 <template>
-  <NavigationBar />
+  <NavigationBar class="navbar" />
   <ContactView />
 </template>
 
-<style></style>
+<style scoped></style>

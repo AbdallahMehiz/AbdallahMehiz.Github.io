@@ -75,7 +75,7 @@ h6 {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 50px 10px auto;
+  grid-template-rows: 50px 30px auto;
   grid-template-areas:
     "...  nav nav nav nav nav nav nav nav ..."
     "pattern pattern pattern pattern pattern pattern pattern pattern pattern pattern"
