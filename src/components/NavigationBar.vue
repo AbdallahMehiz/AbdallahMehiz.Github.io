@@ -28,12 +28,29 @@ export default {
 
 <style scoped>
 nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  align-items: left;
   grid-area: nav;
   color: white;
+  padding-left: 2.5rem;
+  background-image: linear-gradient(
+    90deg,
+    rgba(77, 73, 62, 0.2),
+    rgba(77, 73, 62, 0.2) 14px,
+    transparent 14px,
+    transparent 20px,
+    rgba(77, 73, 62, 0.2) 20px,
+    rgba(77, 73, 62, 0.2) 23px,
+    transparent 23px
+  );
+}
+
+button {
+  min-width: 120px;
+  text-align: left;
 }
 
 /* css code of navigation bar items from 
@@ -63,7 +80,7 @@ button:disabled,
 }
 button:not(:disabled),
 .button {
-  padding: 0.3rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.1rem 0.5rem;
   font-size: 1em;
   border: none;
   outline: none;
