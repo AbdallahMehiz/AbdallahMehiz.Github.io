@@ -4,20 +4,13 @@
     <EarlyDevNotice class="DevNotice" />
     <FigureComponent class="notice" />
     <div class="socials">
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
-      <SocialComponent />
+      <SocialComponent
+        v-for="social in socials"
+        :key="social.socialPlatform"
+        :socialPlatform="social.socialPlatform"
+        :socialIcon="social.socialIcon"
+        :socialLink="social.socialLink"
+      />
     </div>
   </div>
 </template>
@@ -26,9 +19,16 @@
 import FigureComponent from "../components/FigureComponent.vue";
 import SocialComponent from "../components/SocialComponent.vue";
 import EarlyDevNotice from "../components/EarlyDevNotice.vue";
+import socials from "../../data/socials.json";
 
 export default {
   name: "ContactView",
+  data: () => {
+    console.log(socials);
+    return {
+      socials: socials.socials,
+    };
+  },
   setup() {
     return {};
   },

@@ -80,7 +80,7 @@ button:disabled,
 }
 button:not(:disabled),
 .button {
-  padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
   font-size: 1em;
   border: none;
   outline: none;

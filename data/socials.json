@@ -1,0 +1,29 @@
+{
+  "socials": [
+    {
+      "socialPlatform": "Github",
+      "socialLink": "https://github.com/AbdallahMehiz",
+      "socialIcon": "../assets/socials/facebook.svg"
+    },
+    {
+      "socialPlatform": "Twitter",
+      "socialLink": "https://twitter.com/AbdallahMehiz",
+      "socialIcon": "../assets/socials/facebook.svg"
+    },
+    {
+      "socialPlatform": "LinkedIn",
+      "socialLink": "https://www.linkedin.com/in/abdallah-mehiz-5b1b3b1b3/",
+      "socialIcon": "../assets/socials/facebook.svg"
+    },
+    {
+      "socialPlatform": "Facebook",
+      "socialLink": "https://www.facebook.com/abdallahmehiz",
+      "socialIcon": "../assets/socials/facebook.svg"
+    },
+    {
+      "socialPlatform": "Discord",
+      "socialLink": "Abdallah#7496",
+      "socialIcon": "../assets/socials/facebook.svg"
+    }
+  ]
+}
