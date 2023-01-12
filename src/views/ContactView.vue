@@ -37,6 +37,9 @@ export default {
 </script>
 
 <style>
+.ContactView {
+  max-width: 1240px;
+}
 .DevNotice {
   grid-area: DevNotice;
 }

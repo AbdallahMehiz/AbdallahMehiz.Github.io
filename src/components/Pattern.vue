@@ -15,7 +15,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+body {
+  width: 100vh;
+}
 .pattern {
   grid-area: pattern;
   border-top: 2px solid #4d493e;
