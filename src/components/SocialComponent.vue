@@ -1,13 +1,17 @@
 <template>
-  <figure>
-    <div class="socials-icons" :href="socialLink">
-      <img class="social-icons" :src="socialIcon" />
-    </div>
-    <figcaption>{{ socialPlatform }}</figcaption>
-  </figure>
+  <a :href="socialLink">
+    <figure>
+      <div class="socials-icons" :alt="socialPlatform">
+        <img class="social-icons" onload="SVGInject(this)" :src="socialIcon" />
+      </div>
+      <figcaption>{{ socialPlatform }}</figcaption>
+    </figure>
+  </a>
 </template>
 
 <script>
+import SVGInjectInstance from "@iconfu/svg-inject";
+
 export default {
   name: "SocialComponent",
   props: {
@@ -22,15 +26,17 @@ export default {
 </script>
 
 <style scoped>
-.socials-icons svg path {
+svg {
+  max-width: 80px;
+  max-height: 80px;
   fill: #3f3b33;
   transition: 600ms;
 }
 figure:hover {
   background-color: #3f3b33;
 }
-figure:hover .socials-icons svg path {
-  fill: #dcd8c0;
+figure:hover .socials-icons svg {
+  fill: white;
 }
 img {
   max-width: inherit;
