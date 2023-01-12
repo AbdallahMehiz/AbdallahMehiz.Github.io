@@ -1,7 +1,7 @@
 <template>
   <figure>
     <div class="socials-icons" :href="socialLink">
-      <img :src="socialIcon" />
+      <img class="social-icons" :src="socialIcon" />
     </div>
     <figcaption>{{ socialPlatform }}</figcaption>
   </figure>

@@ -1,6 +1,6 @@
 <template>
   <div class="ContactView">
-    <h1>socials page</h1>
+    <h1>socials</h1>
     <EarlyDevNotice class="DevNotice" />
     <FigureComponent class="notice" />
     <div class="socials">
