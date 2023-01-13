@@ -10,7 +10,10 @@
       <button>Resume</button>
     </router-link>-->
     <router-link to="/Contact">
-      <button class="button">Contact</button>
+      <button class="button">
+        <div class="icon"></div>
+        Contact
+      </button>
     </router-link>
   </nav>
 </template>
@@ -27,6 +30,19 @@ export default {
 </script>
 
 <style scoped>
+button:hover .icon {
+  background-color: #dcd8c0;
+  display: inline-block;
+}
+.icon {
+  background-color: #454138;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  min-height: 15px;
+  min-width: 15px;
+  transition: 300ms;
+}
 nav {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -53,7 +69,7 @@ button {
   text-align: left;
 }
 
-/* css code of navigation bar items from 
+/* css code of navigation bar items from
 https://github.com/metakirby5/yorha
 tysm
 */
@@ -80,8 +96,9 @@ button:disabled,
 }
 button:not(:disabled),
 .button {
-  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
-  font-size: 1em;
+  max-height: 30px;
+  padding: 0rem 0.5rem 0.3rem 0.5rem;
+  font-size: 1.3em;
   border: none;
   outline: none;
   -webkit-appearance: none;
