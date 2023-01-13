@@ -24,6 +24,61 @@
       "socialPlatform": "Discord",
       "socialLink": "Abdallah#7496",
       "socialIcon": "../assets/socials/discord.svg"
+    },
+    {
+      "socialPlatform": "Instagram",
+      "socialLink": "https://www.instagram.com/abdallahmehiz/",
+      "socialIcon": "../assets/socials/instagram.svg"
+    },
+    {
+      "socialPlatform": "Email",
+      "socialLink": "mailto:abdallahmehiz0@gmail.com",
+      "socialIcon": "../assets/socials/email.svg"
+    },
+    {
+      "socialPlatform": "Telegram",
+      "socialLink": "https://t.me/AbdallahMehiz",
+      "socialIcon": "../assets/socials/telegram.svg"
+    },
+    {
+      "socialPlatform": "Reddit",
+      "socialLink": "https://www.reddit.com/user/AbdallahPc",
+      "socialIcon": "../assets/socials/reddit.svg"
+    },
+    {
+      "socialPlatform": "StackOverflow",
+      "socialLink": "https://stackoverflow.com/users/19456832/abdallahmehiz",
+      "socialIcon": "../assets/socials/stackoverflow.svg"
+    },
+    {
+      "socialPlatform": "Steam",
+      "socialLink": "https://steamcommunity.com/id/AbdallahMehiz",
+      "socialIcon": "../assets/socials/steam.svg"
+    },
+    {
+      "socialPlatform": "Battlenet",
+      "socialLink": "AbdallahMehiz#22955",
+      "socialIcon": "../assets/socials/battlenet.svg"
+    },
+    {
+      "socialPlatform": "Epic Games",
+      "socialLink": "ME71Z",
+      "socialIcon": "../assets/socials/epicgames.svg"
+    },
+    {
+      "socialPlatform": "Twitch",
+      "socialLink": "https://www.twitch.tv/abdallahmehiz",
+      "socialIcon": "../assets/socials/twitch.svg"
+    },
+    {
+      "socialPlatform": "AniList",
+      "socialLink": "https://anilist.co/user/Abdallah/",
+      "socialIcon": "../assets/socials/anilist.svg"
+    },
+    {
+      "socialPlatform": "Lichess",
+      "socialLink": "https://lichess.org/@/AbdallahMehiz",
+      "socialIcon": "../assets/socials/lichess.svg"
     }
   ]
 }
