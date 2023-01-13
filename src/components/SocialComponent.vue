@@ -1,5 +1,5 @@
 <template>
-  <a :href="socialLink">
+  <a :href="socialLink" target="blank">
     <figure>
       <div class="socials-icons" :alt="socialPlatform">
         <img onload="SVGInject(this)" :src="socialIcon" />
@@ -26,6 +26,9 @@ export default {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
 .socials-icons {
   margin: 0;
 }
@@ -41,6 +44,10 @@ figure:hover {
 }
 figure:hover .socials-icons svg {
   fill: white;
+}
+figure:hover figcaption {
+  transition: 100ms !important;
+  font-weight: 600;
 }
 img {
   max-width: inherit;
@@ -78,7 +85,6 @@ figure > figcaption {
   -ms-flex-order: -1;
   -webkit-order: -1;
   order: 4;
-  height: 1fr;
   width: 100%;
   padding: 0.2rem, 0rem;
   text-align: center;
