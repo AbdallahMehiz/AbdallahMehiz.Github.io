@@ -22,7 +22,7 @@
     },
     {
       "socialPlatform": "Discord",
-      "socialLink": "Abdallah#7496",
+      "socialLink": "discord.com/users/325155189365669888",
       "socialIcon": "../assets/socials/discord.svg"
     },
     {
@@ -46,11 +46,6 @@
       "socialIcon": "../assets/socials/reddit.svg"
     },
     {
-      "socialPlatform": "StackOverflow",
-      "socialLink": "https://stackoverflow.com/users/19456832/abdallahmehiz",
-      "socialIcon": "../assets/socials/stackoverflow.svg"
-    },
-    {
       "socialPlatform": "Steam",
       "socialLink": "https://steamcommunity.com/id/AbdallahMehiz",
       "socialIcon": "../assets/socials/steam.svg"
@@ -61,7 +56,7 @@
       "socialIcon": "../assets/socials/battlenet.svg"
     },
     {
-      "socialPlatform": "Epic Games",
+      "socialPlatform": "EPIC",
       "socialLink": "ME71Z",
       "socialIcon": "../assets/socials/epicgames.svg"
     },

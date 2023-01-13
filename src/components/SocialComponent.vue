@@ -2,7 +2,7 @@
   <a :href="socialLink">
     <figure>
       <div class="socials-icons" :alt="socialPlatform">
-        <img class="social-icons" onload="SVGInject(this)" :src="socialIcon" />
+        <img onload="SVGInject(this)" :src="socialIcon" />
       </div>
       <figcaption>{{ socialPlatform }}</figcaption>
     </figure>
@@ -26,11 +26,15 @@ export default {
 </script>
 
 <style scoped>
+.socials-icons {
+  margin: 0;
+}
 svg {
-  max-width: 80px;
-  max-height: 80px;
+  width: 80px;
+  height: 80px;
   fill: #3f3b33;
   transition: 600ms;
+  align-self: center !important;
 }
 figure:hover {
   background-color: #3f3b33;
@@ -42,19 +46,15 @@ img {
   max-width: inherit;
   max-height: inherit;
 }
-.socials-icons {
-  max-width: 80px;
-  max-height: 80px;
-  margin: 3px 0;
-}
 figure {
-  max-width: 80px;
-  max-height: 100px;
+  height: 120px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: box;
   display: flex;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
@@ -63,13 +63,12 @@ figure {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0;
-  margin-bottom: 1rem;
   background-color: #dcd8c0;
-  padding: 0rem 0.5rem;
   transition: 600ms;
+  padding-top: 0.3rem;
 }
 figure > :not(figcaption) {
-  margin: 0.5rem;
+  margin: 0rem;
   transition: 600ms;
 }
 figure > figcaption {
@@ -79,15 +78,13 @@ figure > figcaption {
   -ms-flex-order: -1;
   -webkit-order: -1;
   order: 4;
-  margin: -0.5rem;
-  padding: 0.2rem 0.5rem;
+  height: 1fr;
+  width: 100%;
+  padding: 0.2rem, 0rem;
   text-align: center;
   font-size: 1.2rem;
-  background-color: #454138;
+  background-color: #3f3b33;
   color: #bab5a1;
   transition: 600ms;
-}
-iframe {
-  border: 0.1rem solid #bab5a1;
 }
 </style>

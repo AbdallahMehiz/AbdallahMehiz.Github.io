@@ -52,9 +52,9 @@ h1 {
 .socials {
   grid-area: socials;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 1rem;
 }
 .ContactView {
   display: grid;
