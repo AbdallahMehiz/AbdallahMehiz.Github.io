@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@iconfu/svg-inject": "^1.2.3",
-    "sass": "^1.57.1",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
