@@ -48,20 +48,12 @@ figure:hover svg {
   color: white;
 }
 figure {
-  height: 120px;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   -o-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
+  display: flex;
   flex-direction: column;
   margin: 0;
   background-color: #dcd8c0;
