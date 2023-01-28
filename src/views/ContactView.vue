@@ -56,6 +56,11 @@ h1 {
   grid-template-rows: auto;
   grid-gap: 1rem;
 }
+@media (max-width: 768px) {
+  .socials {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 .ContactView {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
