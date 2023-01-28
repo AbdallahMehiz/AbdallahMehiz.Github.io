@@ -2,7 +2,7 @@
   <a :href="socialLink" target="blank">
     <figure>
       <div class="socials-icons" :alt="socialPlatform">
-        <img onload="SVGInject(this)" :src="socialIcon" />
+        <font-awesome-icon :icon="socialIcon" />
       </div>
       <figcaption>{{ socialPlatform }}</figcaption>
     </figure>
@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import SVGInjectInstance from "@iconfu/svg-inject";
-
 export default {
   name: "SocialComponent",
   props: {
@@ -35,23 +33,19 @@ a {
 svg {
   width: 80px;
   height: 80px;
-  fill: #3f3b33;
+  color: #454138;
   transition: 600ms;
   align-self: center !important;
 }
 figure:hover {
   background-color: #3f3b33;
 }
-figure:hover .socials-icons svg {
-  fill: white;
-}
 figure:hover figcaption {
   transition: 100ms !important;
   font-weight: 600;
 }
-img {
-  max-width: inherit;
-  max-height: inherit;
+figure:hover svg {
+  color: white;
 }
 figure {
   height: 120px;

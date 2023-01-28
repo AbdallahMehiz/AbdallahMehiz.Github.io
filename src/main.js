@@ -3,8 +3,40 @@ import "./style/style.css";
 import App from "./App.vue";
 import router from "./router/router.js";
 
-const app = createApp(App);
+// Font Awesome
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import {
+  faFacebookF,
+  faGithub,
+  faLinkedinIn,
+  faTwitter,
+  faTwitch,
+  faDiscord,
+  faSteam,
+  faInstagram,
+  faReddit,
+  faBattleNet,
+} from "@fortawesome/free-brands-svg-icons";
+import { faPaperPlane, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-app.use(router);
+library.add(
+  faFacebookF,
+  faGithub,
+  faLinkedinIn,
+  faTwitter,
+  faTwitch,
+  faDiscord,
+  faSteam,
+  faInstagram,
+  faReddit,
+  faBattleNet,
 
-app.mount("#app");
+  faPaperPlane,
+  faEnvelope
+);
+
+const app = createApp(App)
+  .use(router)
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .mount("#app");

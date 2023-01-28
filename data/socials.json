@@ -3,77 +3,62 @@
     {
       "socialPlatform": "Github",
       "socialLink": "https://github.com/AbdallahMehiz",
-      "socialIcon": "../assets/socials/github.svg"
+      "socialIcon": "fa-brands fa-github"
     },
     {
       "socialPlatform": "Twitter",
       "socialLink": "https://twitter.com/AbdallahMehiz",
-      "socialIcon": "../assets/socials/twitter.svg"
+      "socialIcon": "fa-brands fa-twitter"
     },
     {
       "socialPlatform": "LinkedIn",
       "socialLink": "https://www.linkedin.com/in/abdallah-mehiz-5b1b3b1b3/",
-      "socialIcon": "../assets/socials/linkedin.svg"
+      "socialIcon": "fa-brands fa-linkedin-in"
     },
     {
       "socialPlatform": "Facebook",
       "socialLink": "https://www.facebook.com/abdallahmehiz",
-      "socialIcon": "../assets/socials/facebook.svg"
+      "socialIcon": "fa-brands fa-facebook-f"
     },
     {
       "socialPlatform": "Discord",
       "socialLink": "discord.com/users/325155189365669888",
-      "socialIcon": "../assets/socials/discord.svg"
+      "socialIcon": "fa-brands fa-discord"
     },
     {
       "socialPlatform": "Instagram",
       "socialLink": "https://www.instagram.com/abdallahmehiz/",
-      "socialIcon": "../assets/socials/instagram.svg"
+      "socialIcon": "fa-brands fa-instagram"
     },
     {
       "socialPlatform": "Email",
       "socialLink": "mailto:abdallahmehiz0@gmail.com",
-      "socialIcon": "../assets/socials/email.svg"
+      "socialIcon": "fa-solid fa-envelope"
     },
     {
       "socialPlatform": "Telegram",
       "socialLink": "https://t.me/AbdallahMehiz",
-      "socialIcon": "../assets/socials/telegram.svg"
+      "socialIcon": "fa-solid fa-paper-plane"
     },
     {
       "socialPlatform": "Reddit",
       "socialLink": "https://www.reddit.com/user/AbdallahPc",
-      "socialIcon": "../assets/socials/reddit.svg"
+      "socialIcon": "fa-brands fa-reddit"
     },
     {
       "socialPlatform": "Steam",
       "socialLink": "https://steamcommunity.com/id/AbdallahMehiz",
-      "socialIcon": "../assets/socials/steam.svg"
+      "socialIcon": "fa-brands fa-steam"
     },
     {
       "socialPlatform": "Battlenet",
       "socialLink": "AbdallahMehiz#22955",
-      "socialIcon": "../assets/socials/battlenet.svg"
-    },
-    {
-      "socialPlatform": "EPIC",
-      "socialLink": "ME71Z",
-      "socialIcon": "../assets/socials/epicgames.svg"
+      "socialIcon": "fa-brands fa-battle-net"
     },
     {
       "socialPlatform": "Twitch",
       "socialLink": "https://www.twitch.tv/abdallahmehiz",
-      "socialIcon": "../assets/socials/twitch.svg"
-    },
-    {
-      "socialPlatform": "AniList",
-      "socialLink": "https://anilist.co/user/Abdallah/",
-      "socialIcon": "../assets/socials/anilist.svg"
-    },
-    {
-      "socialPlatform": "Lichess",
-      "socialLink": "https://lichess.org/@/AbdallahMehiz",
-      "socialIcon": "../assets/socials/lichess.svg"
+      "socialIcon": "fa-brands fa-twitch"
     }
   ]
 }
