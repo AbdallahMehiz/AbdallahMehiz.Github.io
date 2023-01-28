@@ -9,8 +9,13 @@ const router = createRouter({
       component: () => import("../views/ContactView.vue"),
     },
     {
+      path: "/resume",
+      name: "resume",
+      component: () => import("../views/ResumeView.vue"),
+    },
+    {
       path: "/",
-      redirects: "/contacts",
+      redirects: "/contact",
     },
   ],
 });

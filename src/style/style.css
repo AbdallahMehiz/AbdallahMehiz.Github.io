@@ -79,10 +79,10 @@ h6 {
   grid-template-areas:
     "...  nav nav nav nav nav nav nav nav ..."
     "pattern pattern pattern pattern pattern pattern pattern pattern pattern pattern"
-    "...  ContactView ContactView ContactView ContactView ContactView ContactView ContactView ContactView ...";
+    "...  RouterView RouterView RouterView RouterView RouterView RouterView RouterView RouterView ...";
 }
-.ContactView {
-  grid-area: ContactView;
+.RouterView {
+  grid-area: RouterView;
 }
 button {
   color: wheat;

@@ -7,7 +7,7 @@ import ContactView from "./views/ContactView.vue";
 <template>
   <NavigationBar class="navbar" />
   <Pattern class="pattern" />
-  <ContactView />
+  <RouterView class="RouterView" />
 </template>
 
 <style scoped>

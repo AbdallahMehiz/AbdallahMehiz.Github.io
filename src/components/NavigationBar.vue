@@ -9,6 +9,12 @@
     <router-link to="/Resume">
       <button>Resume</button>
     </router-link>-->
+    <router-link to="/resume">
+      <button class="button">
+        <div class="icon"></div>
+        Resume
+      </button>
+    </router-link>
     <router-link to="/Contact">
       <button class="button">
         <div class="icon"></div>
@@ -67,6 +73,7 @@ nav {
 button {
   min-width: 120px;
   text-align: left;
+  margin-right: 1rem;
 }
 
 /* css code of navigation bar items from
