@@ -45,7 +45,7 @@ button:hover .icon {
 }
 nav {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   display: flex;
   flex-direction: row;
   align-items: left;
@@ -97,7 +97,6 @@ button:disabled,
 button:not(:disabled),
 .button {
   max-height: 30px;
-  padding: 0rem 0.5rem 0.3rem 0.5rem;
   font-size: 1.3em;
   border: none;
   outline: none;
