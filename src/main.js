@@ -15,7 +15,7 @@ import {
   faDiscord,
   faSteam,
   faInstagram,
-  faReddit,
+  faRedditAlien,
   faBattleNet,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane, faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -29,7 +29,7 @@ library.add(
   faDiscord,
   faSteam,
   faInstagram,
-  faReddit,
+  faRedditAlien,
   faBattleNet,
 
   faPaperPlane,
