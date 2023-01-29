@@ -42,6 +42,7 @@ body {
   color: #454138;
 }
 a {
+  text-decoration: none;
   color: inherit;
 }
 p {

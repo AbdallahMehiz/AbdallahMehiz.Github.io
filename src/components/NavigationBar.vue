@@ -1,25 +1,18 @@
 <template>
   <nav>
-    <!--<router-link to="/blog">
-      <button>Blog</button>
+    <div class="idkwhattonameit"></div>
+    <router-link class="unclickable button" to="/">
+      <div class="icon"></div>
+      <p style="display: inline; margin-left: 5px">Home</p>
+      <p style="font-size: 0.8rem; display: inline">.tech</p>
     </router-link>
-    <router-link to="/Projects">
-      <button>Projects</button>
+    <router-link class="button" to="/resume">
+      <div class="icon"></div>
+      Resume
     </router-link>
-    <router-link to="/Resume">
-      <button>Resume</button>
-    </router-link>-->
-    <router-link to="/resume">
-      <button class="button">
-        <div class="icon"></div>
-        Resume
-      </button>
-    </router-link>
-    <router-link to="/Contact">
-      <button class="button">
-        <div class="icon"></div>
-        Contact
-      </button>
+    <router-link class="button" to="/Contact">
+      <div class="icon"></div>
+      Contact
     </router-link>
   </nav>
 </template>
@@ -36,7 +29,29 @@ export default {
 </script>
 
 <style scoped>
-button:hover .icon {
+.idkwhattonameit {
+  min-width: 2.5rem;
+  height: 30px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(77, 73, 62, 0.2),
+    rgba(77, 73, 62, 0.2) 14px,
+    transparent 14px,
+    transparent 20px,
+    rgba(77, 73, 62, 0.2) 20px,
+    rgba(77, 73, 62, 0.2) 23px,
+    transparent 23px
+  );
+}
+.unclickable {
+  pointer-events: none;
+  cursor: default;
+}
+.button:hover {
+  background-color: #dcd8c0;
+  display: inline-block;
+}
+.button:hover .icon {
   background-color: #dcd8c0;
   display: inline-block;
 }
@@ -51,27 +66,16 @@ button:hover .icon {
 }
 nav {
   margin-top: 10px;
-  margin-bottom: 14px;
   display: flex;
   flex-direction: row;
   align-items: left;
   grid-area: nav;
   color: white;
   padding-left: 2.5rem;
-  background-image: linear-gradient(
-    90deg,
-    rgba(77, 73, 62, 0.2),
-    rgba(77, 73, 62, 0.2) 14px,
-    transparent 14px,
-    transparent 20px,
-    rgba(77, 73, 62, 0.2) 20px,
-    rgba(77, 73, 62, 0.2) 23px,
-    transparent 23px
-  );
 }
 
-button {
-  min-width: 120px;
+.button {
+  padding: 0 0.5rem 0 0.5rem;
   text-align: left;
   margin-right: 1rem;
 }
@@ -81,8 +85,6 @@ https://github.com/metakirby5/yorha
 tysm
 */
 
-input:disabled,
-button:disabled,
 .button-disabled {
   padding: 0.5rem;
   font-size: 1em;
@@ -101,7 +103,6 @@ button:disabled,
   cursor: not-allowed;
   text-decoration: none;
 }
-button:not(:disabled),
 .button {
   max-height: 30px;
   font-size: 1.3em;
@@ -122,20 +123,14 @@ button:not(:disabled),
   -o-transition-duration: 0.2s;
   -ms-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  -webkit-transition-property: color, background-color, box-shadow;
-  -moz-transition-property: color, background-color, box-shadow;
-  -o-transition-property: color, background-color, box-shadow;
-  -ms-transition-property: color, background-color, box-shadow;
-  transition-property: color, background-color, box-shadow;
+  -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  -ms-transition-property: color, background-color;
+  transition-property: color, background-color;
   position: relative;
   z-index: 1;
 }
-button:not(:disabled):hover,
-.button:hover {
-  -webkit-box-shadow: 0.2em 0.2em 0.1em 0 #bab5a1;
-  box-shadow: 0.2em 0.2em 0.1em 0 #bab5a1;
-}
-button:not(:disabled):before,
 .button:before {
   content: "";
   -webkit-transition: all 0.2s;
@@ -149,7 +144,6 @@ button:not(:disabled):before,
   left: 0;
   right: 0;
 }
-button:not(:disabled):after,
 .button:after {
   content: "";
   -webkit-transition: all 0.2s;
@@ -170,29 +164,33 @@ button:not(:disabled):after,
   background-color: #454138;
   z-index: -1;
 }
-button:not(:disabled):hover,
 .button:hover {
   background-color: transparent;
   color: #dcd8c0;
 }
-button:not(:disabled):hover:before,
 .button:hover:before {
-  top: -0.2rem;
-  bottom: -0.2rem;
+  top: -0.1rem;
+  bottom: -0.1rem;
   border: solid #454138;
-  border-width: 0.1rem 0;
+  border-width: 0.1rem 0 0.1rem 0;
 }
-button:not(:disabled):hover:after,
 .button:hover:after {
   width: 100%;
 }
-button:not(:disabled):active,
 .button:active {
   color: #454138;
-  color: white;
 }
-button:not(:disabled):active:after,
 .button:active:after {
   background-color: #dcd8c0;
+}
+.button:active:before {
+  top: 0.1rem;
+  bottom: 0.1rem;
+  border: solid #dcd8c0;
+  border-width: 0 0.1rem 0 0.1rem;
+}
+.router-link-active {
+  border: solid #454138;
+  border-width: 0.1rem 0 1rem 0;
 }
 </style>
