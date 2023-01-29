@@ -1,7 +1,6 @@
 <script setup>
 import NavigationBar from "./components/NavigationBar.vue";
 import Pattern from "./components/Pattern.vue";
-import ContactView from "./views/ContactView.vue";
 </script>
 
 <template>
