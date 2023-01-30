@@ -8,23 +8,24 @@
     </router-link>
     <router-link class="button" to="/resume">
       <div class="icon"></div>
-      Resume
+      <p style="display: inline; margin: 0">Resume</p>
     </router-link>
     <router-link class="button" to="/Contact">
       <div class="icon"></div>
-      Contact
+      <p style="display: inline; margin: 0">Contact</p>
     </router-link>
   </nav>
 </template>
 
 <script>
-import { RouterLink } from "vue-router";
+import { RouterLink, useRoute } from "vue-router";
 
 export default {
   name: "NavigationBar",
   setup() {
     return {};
   },
+  props: {},
 };
 </script>
 
@@ -63,6 +64,7 @@ export default {
   min-height: 15px;
   min-width: 15px;
   transition: 300ms;
+  margin-right: 5px;
 }
 nav {
   margin-top: 10px;
@@ -85,24 +87,6 @@ https://github.com/metakirby5/yorha
 tysm
 */
 
-.button-disabled {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-  color: #bab5a1;
-  cursor: not-allowed;
-  text-decoration: none;
-}
 .button {
   max-height: 30px;
   font-size: 1.3em;
@@ -190,7 +174,34 @@ tysm
   border-width: 0 0.1rem 0 0.1rem;
 }
 .router-link-active {
-  border: solid #454138;
-  border-width: 0.1rem 0 1rem 0;
+  border-width: 0rem 0 1rem 0 !important;
+  color: #dcd8c0;
+  content: none !important;
+  animation: blink 1.5s infinite !important;
+}
+@keyframes blink {
+  0% {
+    background-color: #454138;
+    border: solid #454138;
+  }
+  50% {
+    background-color: #545245;
+    border: solid #545245;
+  }
+  100% {
+    background-color: #454138;
+    border: solid #454138;
+  }
+}
+
+.router-link-active:before {
+  content: none !important;
+}
+.router-link-active:after {
+  content: none !important;
+}
+.router-link-active .icon {
+  background-color: #dcd8c0;
+  display: inline-block;
 }
 </style>
