@@ -3,7 +3,7 @@
     <div class="idkwhattonameit"></div>
     <router-link class="unclickable button" to="/">
       <div class="icon"></div>
-      <p style="display: inline; margin-left: 5px">Home</p>
+      <p style="display: inline; margin-left: 5px">Mehiz</p>
       <p style="font-size: 0.8rem; display: inline">.tech</p>
     </router-link>
     <router-link class="button" to="/resume">
