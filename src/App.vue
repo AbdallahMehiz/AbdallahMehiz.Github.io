@@ -14,4 +14,7 @@ import Pattern from "./components/Pattern.vue";
   grid-area: pattern;
   border-top: 2px solid #4d493e;
 }
+.RouterView {
+  grid-area: RouterView;
+}
 </style>

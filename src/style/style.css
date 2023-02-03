@@ -46,9 +46,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-p {
-  margin: 0 0 1rem 0;
-}
 mark {
   background-color: #454138;
   color: #dcd8c0;
@@ -75,19 +72,12 @@ h6 {
 
 #app {
   display: grid;
-  height: 100vh;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 50px 30px auto;
   grid-template-areas:
     "...  nav nav nav nav nav nav nav nav ..."
     "pattern pattern pattern pattern pattern pattern pattern pattern pattern pattern"
     "...  RouterView RouterView RouterView RouterView RouterView RouterView RouterView RouterView ...";
-}
-.RouterView {
-  grid-area: RouterView;
-}
-button {
-  color: wheat;
 }
 
 ::-webkit-scrollbar {
