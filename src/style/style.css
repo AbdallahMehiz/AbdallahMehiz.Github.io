@@ -34,7 +34,7 @@ body {
       rgba(204, 200, 177, 0) 1px
     ),
     linear-gradient(to bottom, #ccc8b1 1px, rgba(204, 200, 177, 0) 1px);
-  font-family: helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0.03rem;
   font-weight: 300;
   color: #454138;
