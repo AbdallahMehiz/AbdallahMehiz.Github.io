@@ -1,37 +1,59 @@
 <template>
-  <nav>
-    <div class="idkwhattonameit"></div>
-    <router-link class="unclickable button" to="/">
-      <div class="icon"></div>
-      <p style="display: inline; margin-left: 5px">Mehiz</p>
-      <p style="font-size: 0.8rem; display: inline">.tech</p>
-    </router-link>
-    <router-link class="button" to="/resume">
-      <div class="icon"></div>
-      <p style="display: inline; margin: 0">Resume</p>
-    </router-link>
-    <router-link class="button" to="/Contact">
-      <div class="icon"></div>
-      <p style="display: inline; margin: 0">Contact</p>
-    </router-link>
-  </nav>
+  <div class="navigation-bar">
+    <div class="items">
+      <div class="fitem"></div>
+      <router-link class="item" to="/">
+        <button class="button">
+          <div class="icon" tabindex="-1"></div>
+          Home
+        </button>
+      </router-link>
+      <router-link class="item" to="/resume">
+        <button class="button">
+          <div class="icon" tabindex="-1"></div>
+          Resume
+        </button>
+      </router-link>
+      <router-link class="item" to="/contact">
+        <button class="button">
+          <div class="icon" tabindex="-1"></div>
+          Contact
+        </button>
+      </router-link>
+    </div>
+  </div>
 </template>
 
 <script>
-import { RouterLink, useRoute } from "vue-router";
+import { RouterLink } from "vue-router";
 
 export default {
   name: "NavigationBar",
   setup() {
     return {};
   },
-  props: {},
 };
 </script>
 
-<style scoped>
-.idkwhattonameit {
-  min-width: 2.5rem;
+<style>
+.navigation-bar {
+  grid-area: nav;
+}
+.icon {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-color: #454138;
+  margin-right: 0.3rem;
+  transition: 0.2s;
+}
+.items {
+  width: 100%;
+  padding: calc((50px - 30px) / 2);
+  display: flex;
+}
+.fitem {
+  min-width: 2rem;
   height: 30px;
   background-image: linear-gradient(
     90deg,
@@ -44,84 +66,37 @@ export default {
     transparent 23px
   );
 }
-.unclickable {
-  pointer-events: none;
-  cursor: default;
+.item {
+  margin: 0 0.5rem;
 }
-.button:hover {
-  background-color: #dcd8c0;
-  display: inline-block;
-}
-.button:hover .icon {
-  background-color: #dcd8c0;
-  display: inline-block;
-}
-.icon {
-  background-color: #454138;
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  min-height: 15px;
-  min-width: 15px;
-  transition: 300ms;
-  margin-right: 5px;
-}
-nav {
-  margin-top: 10px;
+.button {
   display: flex;
-  flex-direction: row;
-  align-items: left;
-  grid-area: nav;
-  color: white;
-  padding-left: 2.5rem;
-}
-
-.button {
-  padding: 0 0.5rem 0 0.5rem;
-  text-align: left;
-  margin-right: 1rem;
-}
-
-/* css code of navigation bar items from
-https://github.com/metakirby5/yorha
-tysm
-*/
-
-.button {
-  max-height: 30px;
-  font-size: 1.3em;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  height: 30px;
+  width: 100px;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
   border: none;
   outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   border-radius: 0;
   background-color: #bab5a1;
-  color: rgb(63, 59, 51);
+  color: inherit;
   font-family: inherit;
   letter-spacing: inherit;
   font-weight: inherit;
   cursor: pointer;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  -webkit-transition-property: color, background-color;
-  -moz-transition-property: color, background-color;
-  -o-transition-property: color, background-color;
-  -ms-transition-property: color, background-color;
-  transition-property: color, background-color;
+  transition-property: color, background-color, box-shadow;
   position: relative;
   z-index: 1;
 }
+.button:hover {
+  box-shadow: 0.2em 0.2em 0.1em 0 #bab5a1;
+}
 .button:before {
   content: "";
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -130,15 +105,7 @@ tysm
 }
 .button:after {
   content: "";
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
   transition: all 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
-  -ms-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   position: absolute;
   top: 0;
@@ -148,60 +115,58 @@ tysm
   background-color: #454138;
   z-index: -1;
 }
+button:hover .icon {
+  background-color: #dcd8c0;
+}
 .button:hover {
   background-color: transparent;
   color: #dcd8c0;
 }
 .button:hover:before {
-  top: -0.1rem;
-  bottom: -0.1rem;
+  top: -0.2rem;
+  bottom: -0.2rem;
   border: solid #454138;
-  border-width: 0.1rem 0 0.1rem 0;
+  border-width: 0.1rem 0;
 }
 .button:hover:after {
   width: 100%;
 }
+
 .button:active {
   color: #454138;
 }
 .button:active:after {
   background-color: #dcd8c0;
 }
-.button:active:before {
-  top: 0.1rem;
-  bottom: 0.1rem;
-  border: solid #dcd8c0;
-  border-width: 0 0.1rem 0 0.1rem;
+.router-link-active .button {
+  background-color: rgba(0, 0, 0, 0);
 }
 .router-link-active {
-  border-width: 0rem 0 1rem 0 !important;
+  animation: blink 1.6s infinite, expandbottomborder 0.2s;
   color: #dcd8c0;
-  content: none !important;
-  animation: blink 1.5s infinite !important;
+  pointer-events: none;
+  height: 40px;
+}
+.router-link-active .button .icon {
+  background-color: #dcd8c0;
 }
 @keyframes blink {
   0% {
     background-color: #454138;
-    border: solid #454138;
   }
   50% {
-    background-color: #545245;
-    border: solid #545245;
+    background-color: #6b6557;
   }
   100% {
     background-color: #454138;
-    border: solid #454138;
   }
 }
-
-.router-link-active:before {
-  content: none !important;
-}
-.router-link-active:after {
-  content: none !important;
-}
-.router-link-active .icon {
-  background-color: #dcd8c0;
-  display: inline-block;
+@keyframes expandbottomborder {
+  0% {
+    height: 30px;
+  }
+  100% {
+    height: 40px;
+  }
 }
 </style>
