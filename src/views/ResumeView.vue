@@ -20,8 +20,6 @@ export default {
 </script>
 
 <style scoped>
-body {
-}
 .resume-view {
   display: flex;
   flex-direction: column;
