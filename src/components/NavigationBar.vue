@@ -4,19 +4,19 @@
       <div class="fitem"></div>
       <router-link class="item" to="/">
         <button class="button">
-          <div class="icon" tabindex="-1"></div>
+          <i class="cp cp-home-o icon"></i>
           Home
         </button>
       </router-link>
       <router-link class="item" to="/resume">
         <button class="button">
-          <div class="icon" tabindex="-1"></div>
+          <i class="cp cp-folder-o icon"></i>
           Resume
         </button>
       </router-link>
       <router-link class="item" to="/contact">
         <button class="button">
-          <div class="icon" tabindex="-1"></div>
+          <i class="cp cp-envelope-o icon"></i>
           Contact
         </button>
       </router-link>
@@ -41,11 +41,12 @@ export default {
 }
 .icon {
   display: inline-block;
-  height: 1rem;
-  width: 1rem;
+  color: #bab5a1;
   background-color: #454138;
   margin-right: 0.3rem;
   transition: 0.2s;
+  border: 3px solid #454138;
+  font-size: 0.8rem;
 }
 .items {
   width: 100%;
@@ -117,6 +118,8 @@ export default {
 }
 button:hover .icon {
   background-color: #dcd8c0;
+  color: #454138;
+  border: 3px solid #dcd8c0;
 }
 .button:hover {
   background-color: transparent;
@@ -149,6 +152,8 @@ button:hover .icon {
 }
 .router-link-active .button .icon {
   background-color: #dcd8c0;
+  color: #454138;
+  border: 3px solid #dcd8c0;
 }
 @keyframes blink {
   0% {
