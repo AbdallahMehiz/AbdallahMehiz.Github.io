@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import VuePdfEmbed from "vue-pdf-embed";
 import EarlyDevNotice from "../components/EarlyDevNotice.vue";
 
 export default {
