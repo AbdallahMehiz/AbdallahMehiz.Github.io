@@ -16,7 +16,7 @@ import EarlyDevNotice from "../components/EarlyDevNotice.vue";
 
 export default {
   name: "ResumeView",
-  components: { VuePdfEmbed, EarlyDevNotice },
+  components: { EarlyDevNotice },
 };
 </script>
 
