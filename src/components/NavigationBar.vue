@@ -49,7 +49,7 @@ export default {
 }
 .items {
   width: 100%;
-  padding: calc((50px - 30px) / 2);
+  padding: calc((50px - 30px) / 2) 0;
   display: flex;
 }
 .fitem {
