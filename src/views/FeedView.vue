@@ -20,13 +20,12 @@
 <script>
 import FigureComponent from "../components/FigureComponent.vue";
 import CustomButton from "../components/CustomButton.vue";
-import VueMarkdown from "vue-markdown-render";
 
 import posts from "../assets/feed/metadata.json";
 
 export default {
   name: "FeedView",
-  components: { CustomButton, FigureComponent, VueMarkdown },
+  components: { CustomButton, FigureComponent },
   data() {
     return {
       posts: posts,
