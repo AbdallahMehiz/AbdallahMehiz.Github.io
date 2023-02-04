@@ -41,9 +41,6 @@ export default {
 </script>
 
 <style>
-.ContactView {
-  max-width: 1240px;
-}
 .DevNotice {
   grid-area: DevNotice;
 }
@@ -56,11 +53,11 @@ h1 {
 .socials {
   grid-area: socials;
   display: grid;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
+  grid-template-columns: repeat(10, minmax(0, 1fr));
   grid-template-rows: auto;
   grid-gap: 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .socials {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
