@@ -8,6 +8,12 @@
           Home
         </button>
       </router-link>
+      <router-link class="item" to="/feed">
+        <button class="button">
+          <font-awesome-icon icon="fa-solid fa-rss" class="icon" />
+          Feed
+        </button>
+      </router-link>
       <router-link class="item" to="/resume">
         <button class="button">
           <i class="cp cp-folder-o icon"></i>

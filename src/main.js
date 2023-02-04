@@ -18,7 +18,11 @@ import {
   faRedditAlien,
   faBattleNet,
 } from "@fortawesome/free-brands-svg-icons";
-import { faPaperPlane, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPaperPlane,
+  faEnvelope,
+  faRss,
+} from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faFacebookF,
@@ -33,7 +37,8 @@ library.add(
   faBattleNet,
 
   faPaperPlane,
-  faEnvelope
+  faEnvelope,
+  faRss
 );
 
 const app = createApp(App)
