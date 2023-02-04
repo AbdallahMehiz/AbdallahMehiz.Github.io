@@ -4,6 +4,7 @@
     <div>
       <p style="margin: 0 0">
         {{ figureText }}
+        <slot></slot>
       </p>
     </div>
   </figure>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "title": "Here we go again",
+    "date": [2022, 4, 13, 5, 20],
+    "author": "Abdallah Mehiz",
+    "keywords": [],
+    "description": "testing posts cofgirmed",
+    "file": "./posts/first-post.md"
+  },
+  {
+    "id": 1,
+    "title": "first post lets go",
+    "date": [2022, 4, 13, 12, 20],
+    "author": "Abdallah Mehiz",
+    "keywords": [],
+    "description": "biography and plans i guess",
+    "file": "./posts/actual-first-post.md"
+  },
+  {
+    "id": 2,
+    "title": "Graduated First Year of uni",
+    "date": [2022, 7, 1, 0, 0],
+    "author": "Abdallah Mehiz",
+    "keywords": [],
+    "description": "Uni",
+    "file": "./posts/graduated-first-year-uni.md"
+  },
+  {
+    "id": 3,
+    "title": "Eid mubarak",
+    "date": [2022, 5, 2, 5, 0],
+    "author": "Abdallah Mehiz",
+    "keywords": [],
+    "description": "happy eid everyone",
+    "file": "./posts/happy-eid.md"
+  }
+]
