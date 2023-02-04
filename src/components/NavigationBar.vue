@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .navigation-bar {
   grid-area: nav;
 }
