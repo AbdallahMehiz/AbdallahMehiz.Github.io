@@ -1,6 +1,7 @@
 <template>
   <div class="resume-view">
     <h1 class="title">Resume</h1>
+    <EarlyDevNotice class="devnotice" />
     <iframe
       class="document"
       frameborder="0"
@@ -12,17 +13,22 @@
 
 <script>
 import VuePdfEmbed from "vue-pdf-embed";
+import EarlyDevNotice from "../components/EarlyDevNotice.vue";
 
 export default {
   name: "ResumeView",
-  components: { VuePdfEmbed },
+  components: { VuePdfEmbed, EarlyDevNotice },
 };
 </script>
 
 <style scoped>
 .resume-view {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title title ... ... devnotice devnotice devnotice"
+    "resume resume resume resume resume resume resume resume";
 }
 .title {
   grid-area: title;
@@ -30,6 +36,12 @@ export default {
 .document {
   grid-area: resume;
   width: 100%;
-  height: 100%;
+  height: calc(
+    100vh / 1.52
+  ); /* This is very arbitrary i have to find a fix later */
+  overflow: hidden;
+}
+.devnotice {
+  grid-area: devnotice;
 }
 </style>
