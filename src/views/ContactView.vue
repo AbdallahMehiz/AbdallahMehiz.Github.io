@@ -2,7 +2,11 @@
   <div class="ContactView">
     <h1>socials</h1>
     <EarlyDevNotice class="DevNotice" />
-    <FigureComponent class="notice" />
+    <FigureComponent
+      figureTitle="Notice!"
+      figureText="Under here are all of my social links and contact info. A contact info being here doesn't necessarily means i use it regularly."
+      class="notice"
+    />
     <div class="socials">
       <SocialComponent
         v-for="social in socials"
