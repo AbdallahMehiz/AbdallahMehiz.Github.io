@@ -1,8 +1,8 @@
 <template>
   <a :href="socialLink" target="blank">
     <figure>
-      <div class="socials-icons" :alt="socialPlatform">
-        <font-awesome-icon :icon="socialIcon" />
+      <div :alt="socialPlatform">
+        <i class="socials-icons" :class="socialIcon"></i>
       </div>
       <figcaption>{{ socialPlatform }}</figcaption>
     </figure>
@@ -29,13 +29,8 @@ a {
 }
 .socials-icons {
   margin: 0;
-}
-svg {
-  width: 80px;
-  height: 80px;
-  color: #454138;
-  transition: 600ms;
-  align-self: center !important;
+  font-size: 6em;
+  transition: 300ms;
 }
 figure:hover {
   background-color: #3f3b33;
@@ -44,8 +39,8 @@ figure:hover figcaption {
   transition: 100ms !important;
   font-weight: 600;
 }
-figure:hover svg {
-  color: white;
+figure:hover .socials-icons {
+  color: #dcd8c0;
 }
 figure {
   width: 100%;

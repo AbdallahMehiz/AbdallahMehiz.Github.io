@@ -4,25 +4,25 @@
       <div class="fitem"></div>
       <router-link class="item" to="/">
         <button class="button">
-          <i class="cp cp-home-o icon"></i>
+          <i class="icon-home icon"></i>
           Home
         </button>
       </router-link>
       <router-link class="item" to="/feed">
         <button class="button">
-          <font-awesome-icon icon="fa-solid fa-rss" class="icon" />
+          <i class="icon-rss icon"></i>
           Feed
         </button>
       </router-link>
       <router-link class="item" to="/resume">
         <button class="button">
-          <i class="cp cp-folder-o icon"></i>
+          <i class="icon-file icon"></i>
           Resume
         </button>
       </router-link>
       <router-link class="item" to="/contact">
         <button class="button">
-          <i class="cp cp-envelope-o icon"></i>
+          <i class="icon-envelope icon"></i>
           Contact
         </button>
       </router-link>

@@ -3,62 +3,72 @@
     {
       "socialPlatform": "Github",
       "socialLink": "https://github.com/AbdallahMehiz",
-      "socialIcon": "fa-brands fa-github"
+      "socialIcon": "icon-github"
     },
     {
       "socialPlatform": "Twitter",
       "socialLink": "https://twitter.com/AbdallahMehiz",
-      "socialIcon": "fa-brands fa-twitter"
+      "socialIcon": "icon-twitter"
     },
     {
       "socialPlatform": "LinkedIn",
       "socialLink": "https://www.linkedin.com/in/abdallah-mehiz-5b1b3b1b3/",
-      "socialIcon": "fa-brands fa-linkedin-in"
+      "socialIcon": "icon-linkedin"
     },
     {
       "socialPlatform": "Facebook",
       "socialLink": "https://www.facebook.com/abdallahmehiz",
-      "socialIcon": "fa-brands fa-facebook-f"
+      "socialIcon": "icon-facebook"
     },
     {
       "socialPlatform": "Discord",
-      "socialLink": "discord.com/users/325155189365669888",
-      "socialIcon": "fa-brands fa-discord"
+      "socialLink": "https://discord.com/users/325155189365669888",
+      "socialIcon": "icon-discord"
     },
     {
       "socialPlatform": "Instagram",
       "socialLink": "https://www.instagram.com/abdallahmehiz/",
-      "socialIcon": "fa-brands fa-instagram"
+      "socialIcon": "icon-instagram"
     },
     {
       "socialPlatform": "Email",
       "socialLink": "mailto:abdallahmehiz0@gmail.com",
-      "socialIcon": "fa-solid fa-envelope"
+      "socialIcon": "icon-envelope"
     },
     {
       "socialPlatform": "Telegram",
       "socialLink": "https://t.me/AbdallahMehiz",
-      "socialIcon": "fa-solid fa-paper-plane"
+      "socialIcon": "icon-telegram"
     },
     {
       "socialPlatform": "Reddit",
       "socialLink": "https://www.reddit.com/user/AbdallahPc",
-      "socialIcon": "fa-brands fa-reddit-alien"
+      "socialIcon": "icon-reddit"
     },
     {
       "socialPlatform": "Steam",
       "socialLink": "https://steamcommunity.com/id/AbdallahMehiz",
-      "socialIcon": "fa-brands fa-steam"
+      "socialIcon": "icon-steam"
     },
     {
       "socialPlatform": "Battlenet",
       "socialLink": "AbdallahMehiz#22955",
-      "socialIcon": "fa-brands fa-battle-net"
+      "socialIcon": "icon-battlenet"
     },
     {
       "socialPlatform": "Twitch",
       "socialLink": "https://www.twitch.tv/abdallahmehiz",
-      "socialIcon": "fa-brands fa-twitch"
+      "socialIcon": "icon-twitch"
+    },
+    {
+      "socialPlatform": "AniList",
+      "socialLink": "https://anilist.co/user/Abdallah/",
+      "socialIcon": "icon-anilist"
+    },
+    {
+      "socialPlatform": "Lichess",
+      "socialLink": "https://lichess.org/@/AbdallahMehiz",
+      "socialIcon": "icon-lichess"
     }
   ]
 }
