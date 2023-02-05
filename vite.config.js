@@ -8,4 +8,5 @@ export default defineConfig({
     port: 6969,
   },
   plugins: [vue()],
+  assetsInclude: ["**/*.md"],
 });

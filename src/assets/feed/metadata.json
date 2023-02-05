@@ -6,7 +6,7 @@
     "author": "Abdallah Mehiz",
     "keywords": [],
     "description": "testing posts cofgirmed",
-    "file": "./posts/first-post.md"
+    "file": "first-post.md"
   },
   {
     "id": 1,
@@ -15,7 +15,7 @@
     "author": "Abdallah Mehiz",
     "keywords": [],
     "description": "biography and plans i guess",
-    "file": "./posts/actual-first-post.md"
+    "file": "actual-firstpost.md"
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "author": "Abdallah Mehiz",
     "keywords": [],
     "description": "Uni",
-    "file": "./posts/graduated-first-year-uni.md"
+    "file": "graduated-first-year-uni.md"
   },
   {
     "id": 3,
@@ -33,6 +33,6 @@
     "author": "Abdallah Mehiz",
     "keywords": [],
     "description": "happy eid everyone",
-    "file": "./posts/happy-eid.md"
+    "file": "happy-eid.md"
   }
 ]

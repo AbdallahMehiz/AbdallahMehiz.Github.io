@@ -5,13 +5,15 @@
       <FigureComponent figureTitle="Posts">
         <div class="list">
           <CustomButton
-            v-for="post in posts"
+            v-for="metadata in metadata"
             class="button"
-            :btnText="post.title"
-            btnLink="/feed"
+            btnLink="#"
+            :btnText="metadata.title"
+            @click="selectPost(metadata.file)"
           /></div
       ></FigureComponent>
       <FigureComponent class="post" figureTitle="Description">
+        <VueMarkdown :source="postContent" />
       </FigureComponent>
     </div>
   </div>
@@ -20,16 +22,41 @@
 <script>
 import FigureComponent from "../components/FigureComponent.vue";
 import CustomButton from "../components/CustomButton.vue";
+import VueMarkdown from "vue-markdown-render";
 
-import posts from "../assets/feed/metadata.json";
+import metadata from "../assets/feed/metadata.json";
+const posts = Object.values(
+  import.meta.glob("../assets/feed/posts/*.md", {
+    eager: true,
+    import: "default",
+  })
+);
 
 export default {
   name: "FeedView",
-  components: { CustomButton, FigureComponent },
+  components: { CustomButton, FigureComponent, VueMarkdown },
   data() {
     return {
+      metadata: metadata,
       posts: posts,
+      postContent: "",
     };
+  },
+  mounted() {
+    console.log(posts);
+  },
+  methods: {
+    async selectPost(fileName) {
+      const filePath = this.posts.find((post) => {
+        return post.endsWith(fileName);
+      });
+      if (filePath) {
+        const response = await fetch(filePath);
+        this.postContent = await response.text();
+      } else {
+        this.postContent = "# Post not found";
+      }
+    },
   },
 };
 </script>
