@@ -1,0 +1,1 @@
+.feed[data-v-d78a86b2]{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto;grid-template-areas:"list  post post post";grid-gap:20px}.post[data-v-d78a86b2]{grid-area:post}.list[data-v-d78a86b2]{grid-area:list;display:flex;flex-direction:column}.button[data-v-d78a86b2]{margin:.5rem 0}
