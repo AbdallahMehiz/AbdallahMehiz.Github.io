@@ -25,7 +25,7 @@ import FigureComponent from "../components/FigureComponent.vue";
 import CustomButton from "../components/CustomButton.vue";
 import VueMarkdown from "vue-markdown-render";
 
-import metadata from "../assets/feed/metadata.json";
+import metadata from "/assets/feed/metadata.json";
 
 export default {
   name: "FeedView",
@@ -38,10 +38,7 @@ export default {
   },
   methods: {
     async selectPost(fileName) {
-      const postPath =
-        process.env.NODE_ENV === "development"
-          ? `src/assets/feed/posts/${fileName}`
-          : `/assets/feed/posts/${fileName}`;
+      const postPath = `/assets/feed/posts/${fileName}/${fileName}.md`;
       try {
         const response = await fetch(postPath);
         this.postContent = await response.text();
