@@ -10,8 +10,9 @@
             btnLink="#"
             :btnText="metadata.title"
             @click="selectPost(metadata.file)"
-          /></div
-      ></FigureComponent>
+          />
+        </div>
+      </FigureComponent>
       <FigureComponent class="post" figureTitle="Description">
         <VueMarkdown :source="postContent" />
       </FigureComponent>
@@ -25,35 +26,26 @@ import CustomButton from "../components/CustomButton.vue";
 import VueMarkdown from "vue-markdown-render";
 
 import metadata from "../assets/feed/metadata.json";
-const posts = Object.values(
-  import.meta.glob("../assets/feed/posts/*.md", {
-    eager: true,
-    import: "default",
-  })
-);
 
 export default {
   name: "FeedView",
   components: { CustomButton, FigureComponent, VueMarkdown },
   data() {
     return {
-      metadata: metadata,
-      posts: posts,
+      metadata,
       postContent: "",
     };
   },
-  mounted() {
-    console.log(posts);
-  },
   methods: {
     async selectPost(fileName) {
-      const filePath = this.posts.find((post) => {
-        return post.endsWith(fileName);
-      });
-      if (filePath) {
+      const filePath =
+        process.env.NODE_ENV === "development"
+          ? `src/assets/feed/posts/${fileName}`
+          : `/assets/feed/posts/${fileName}`;
+      try {
         const response = await fetch(filePath);
         this.postContent = await response.text();
-      } else {
+      } catch (error) {
         this.postContent = "# Post not found";
       }
     },
