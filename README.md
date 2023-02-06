@@ -1,4 +1,4 @@
-# My Portofolio
+# My Portoflio
 
 written using vue :)
 

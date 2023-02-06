@@ -2,10 +2,8 @@
   <figure>
     <figcaption>{{ figureTitle }}</figcaption>
     <div>
-      <p style="margin: 0 0">
-        {{ figureText }}
-        <slot></slot>
-      </p>
+      {{ figureText }}
+      <slot></slot>
     </div>
   </figure>
 </template>
@@ -24,7 +22,6 @@ export default {
 </script>
 <style scoped>
 figure {
-  display: box;
   display: flex;
   flex-direction: column;
   margin: 0;

@@ -1,5 +1,14 @@
 [
   {
+    "id": -1,
+    "title": "Welcome to my blog",
+    "date": [2023, 6, 2, 2, 35],
+    "author": "Abdallah Mehiz",
+    "keywords": [],
+    "description": "Welcome to my blog, I hope you enjoy it",
+    "file": "default-post"
+  },
+  {
     "id": 0,
     "title": "Here we go again",
     "date": [2022, 4, 13, 5, 20],

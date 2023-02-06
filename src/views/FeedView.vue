@@ -14,7 +14,7 @@
         </div>
       </FigureComponent>
       <FigureComponent class="post" figureTitle="Description">
-        <VueMarkdown :source="postContent" />
+        <div class="postContent" v-html="postContent"></div>
       </FigureComponent>
     </div>
   </div>
@@ -23,13 +23,15 @@
 <script>
 import FigureComponent from "../components/FigureComponent.vue";
 import CustomButton from "../components/CustomButton.vue";
-import VueMarkdown from "vue-markdown-render";
-
+import MarkdownIt from "markdown-it";
+import markdownItAttrs from "markdown-it-attrs";
 import metadata from "/assets/feed/metadata.json";
+const md = new MarkdownIt();
+md.use(markdownItAttrs);
 
 export default {
   name: "FeedView",
-  components: { CustomButton, FigureComponent, VueMarkdown },
+  components: { CustomButton, FigureComponent },
   data() {
     return {
       metadata,
@@ -42,10 +44,15 @@ export default {
       try {
         const response = await fetch(postPath);
         this.postContent = await response.text();
+        this.postContent = md.render(this.postContent);
+        console.log(this.postContent);
       } catch (error) {
         this.postContent = "# Post not found";
       }
     },
+  },
+  mounted() {
+    this.selectPost("default-post");
   },
 };
 </script>
@@ -61,6 +68,11 @@ export default {
 .post {
   grid-area: post;
 }
+.postContent {
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
+}
 .list {
   grid-area: list;
   display: flex;
@@ -68,5 +80,10 @@ export default {
 }
 .button {
   margin: 0.5rem 0 0.5rem 0;
+}
+
+.postContent {
+  flex-basis: 100%;
+  margin: 0 2rem;
 }
 </style>

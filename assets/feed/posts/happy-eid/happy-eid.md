@@ -6,8 +6,6 @@ Tbh this year's ramadan was the most one of the most interesting months that i'v
 
 so basically i got really sick from my back on the start of the month, couldn't move for 2 weeks, but got through it and after that bought a new pc, yay the specs are :
 
-![asset](/assets/feed/posts/happy-eid/punpun.png)
-
 - **NEW FANCY PC**
   - **CPU** - Intel i3 9100f 4x1 3.60Ghz
   - **RAM** - DDR4 4X2Gb 2666Mhz
