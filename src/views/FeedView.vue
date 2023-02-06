@@ -38,10 +38,7 @@ export default {
   },
   methods: {
     async selectPost(fileName) {
-      const postPath =
-        process.env.NODE_ENV === "development"
-          ? `src/assets/feed/posts/${fileName}`
-          : `/assets/feed/posts/${fileName}`;
+      const postPath = /*process.env.NODE_ENV === "development" ? `src/assets/feed/posts/${fileName}` : */ `/assets/feed/posts/${fileName}`;
       try {
         const response = await fetch(postPath);
         this.postContent = await response.text();
