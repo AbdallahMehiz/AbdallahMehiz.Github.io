@@ -1,6 +1,9 @@
 <template>
   <div class="ContactView">
-    <h1>socials</h1>
+    <div class="header">
+      <h1>Socials</h1>
+      <h3>Here you'll find most if not all of my social accounts.</h3>
+    </div>
     <EarlyDevNotice class="DevNotice" />
     <FigureComponent
       figureTitle="Notice!"
@@ -40,11 +43,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+h1 {
+  margin: 0;
+}
 .DevNotice {
   grid-area: DevNotice;
 }
-h1 {
+.header {
   grid-area: header;
 }
 .notice {
@@ -67,7 +73,7 @@ h1 {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "header header header ... ... DevNotice DevNotice DevNotice"
+    "header header header header ... DevNotice DevNotice DevNotice"
     "notice notice notice notice notice notice notice notice"
     "socials socials socials socials socials socials socials socials";
   overflow: scroll;

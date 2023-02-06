@@ -1,6 +1,12 @@
 <template>
   <div class="resume-view">
-    <h1 class="title">Resume</h1>
+    <div class="header">
+      <h1>Resume</h1>
+      <h3>
+        Here you can find my resume, it's still a work in progress as i am still
+        a student.
+      </h3>
+    </div>
     <EarlyDevNotice class="devnotice" />
     <iframe
       class="document"
@@ -26,11 +32,14 @@ export default {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "title title title ... ... devnotice devnotice devnotice"
+    "header header header header header devnotice devnotice devnotice"
     "resume resume resume resume resume resume resume resume";
 }
-.title {
-  grid-area: title;
+h1 {
+  margin: 0;
+}
+.header {
+  grid-area: header;
 }
 .document {
   grid-area: resume;
