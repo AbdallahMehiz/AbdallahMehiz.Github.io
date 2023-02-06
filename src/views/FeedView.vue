@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1>Feed</h1>
+    <div class="header">
+      <h1 class="title">Feed</h1>
+      <EarlyDevNotice class="devnotice" />
+    </div>
     <div class="feed">
       <FigureComponent figureTitle="Posts">
         <div class="list">
@@ -23,6 +26,8 @@
 <script>
 import FigureComponent from "../components/FigureComponent.vue";
 import CustomButton from "../components/CustomButton.vue";
+import EarlyDevNotice from "../components/EarlyDevNotice.vue";
+
 import MarkdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
 import metadata from "/assets/feed/metadata.json";
@@ -31,7 +36,7 @@ md.use(markdownItAttrs);
 
 export default {
   name: "FeedView",
-  components: { CustomButton, FigureComponent },
+  components: { CustomButton, FigureComponent, EarlyDevNotice },
   data() {
     return {
       metadata,
@@ -58,6 +63,18 @@ export default {
 </script>
 
 <style scoped>
+.header {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "title title title title title devnotice devnotice devnotice";
+}
+.devnotice {
+  grid-area: devnotice;
+}
+.title {
+  grid-area: title;
+}
 .feed {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
