@@ -14,6 +14,12 @@
           Feed
         </button>
       </router-link>
+      <router-link class="item" to="/projects">
+        <button class="button">
+          <i class="icon-book icon"></i>
+          Projects
+        </button>
+      </router-link>
       <router-link class="item" to="/resume">
         <button class="button">
           <i class="icon-file icon"></i>
