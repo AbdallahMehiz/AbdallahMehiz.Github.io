@@ -38,12 +38,12 @@ export default {
   },
   methods: {
     async selectPost(fileName) {
-      const filePath =
+      const postPath =
         process.env.NODE_ENV === "development"
           ? `src/assets/feed/posts/${fileName}`
           : `/assets/feed/posts/${fileName}`;
       try {
-        const response = await fetch(filePath);
+        const response = await fetch(postPath);
         this.postContent = await response.text();
       } catch (error) {
         this.postContent = "# Post not found";
