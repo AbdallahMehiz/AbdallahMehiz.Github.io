@@ -1,12 +1,21 @@
 [
   {
+    "id": -1,
+    "title": "Welcome to my blog",
+    "date": [2023, 6, 2, 2, 35],
+    "author": "Abdallah Mehiz",
+    "keywords": [],
+    "description": "Welcome to my blog, I hope you enjoy it",
+    "file": "default-post"
+  },
+  {
     "id": 0,
     "title": "Here we go again",
     "date": [2022, 4, 13, 5, 20],
     "author": "Abdallah Mehiz",
     "keywords": [],
     "description": "testing posts cofgirmed",
-    "file": "first-post.md"
+    "file": "first-post"
   },
   {
     "id": 1,
@@ -15,7 +24,7 @@
     "author": "Abdallah Mehiz",
     "keywords": [],
     "description": "biography and plans i guess",
-    "file": "actual-firstpost.md"
+    "file": "actual-firstpost"
   },
   {
     "id": 2,
@@ -24,7 +33,7 @@
     "author": "Abdallah Mehiz",
     "keywords": [],
     "description": "Uni",
-    "file": "graduated-first-year-uni.md"
+    "file": "graduated-first-year-uni"
   },
   {
     "id": 3,
@@ -33,6 +42,6 @@
     "author": "Abdallah Mehiz",
     "keywords": [],
     "description": "happy eid everyone",
-    "file": "happy-eid.md"
+    "file": "happy-eid"
   }
 ]
