@@ -53,6 +53,10 @@ export default {
         const response = await fetch(postPath);
         this.postContent = await response.text();
         this.postContent = md.render(this.postContent);
+        const selectedPost = this.metadata.find(
+          (post) => post.file === fileName
+        );
+        this.selectedPostDescription = selectedPost.description;
         console.log(this.postContent);
       } catch (error) {
         this.postContent = "# Post not found";
