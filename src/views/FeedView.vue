@@ -10,7 +10,7 @@
           <CustomButton
             v-for="metadata in metadata"
             class="button"
-            btnLink="#"
+            :btnLink="`#${metadata.file}`"
             :btnText="metadata.title"
             @click="selectPost(metadata.file)"
           />
@@ -46,25 +46,29 @@ export default {
   },
   methods: {
     async selectPost(fileName) {
-      const postPath = `/assets/feed/posts/${fileName}/${fileName}.md`;
+      const hash = window.location.hash.slice(1) || "default-post";
+      const file = fileName || hash;
+      const postPath = `/assets/feed/posts/${file}/${file}.md`;
       try {
         const response = await fetch(postPath);
         this.postContent = await response.text();
         this.postContent = md.render(this.postContent);
-
-        // Find the selected post in the metadata and set the description as the title
-        const selectedPost = this.metadata.find(
-          (post) => post.file === fileName
-        );
-        this.selectedPostDescription = selectedPost.description;
+        console.log(this.postContent);
       } catch (error) {
         this.postContent = "# Post not found";
-        this.selectedPostDescription = "";
       }
     },
   },
   mounted() {
-    this.selectPost("default-post");
+    window.addEventListener("hashchange", this.selectPost);
+    this.selectPost(
+      window.location.hash.slice(1).split("#").pop() === "/feed"
+        ? "default-post"
+        : window.location.hash.slice(1).split("#").pop()
+    );
+  },
+  beforeDestroy() {
+    window.removeEventListener("hashchange", this.selectPost);
   },
 };
 </script>
