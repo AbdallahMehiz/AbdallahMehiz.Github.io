@@ -16,7 +16,7 @@
           />
         </div>
       </FigureComponent>
-      <FigureComponent class="post" figureTitle="Description">
+      <FigureComponent class="post" :figureTitle="selectedPostDescription">
         <div class="postContent" v-html="postContent"></div>
       </FigureComponent>
     </div>
@@ -41,6 +41,7 @@ export default {
     return {
       metadata,
       postContent: "",
+      selectedPostDescription: "",
     };
   },
   methods: {
@@ -50,9 +51,15 @@ export default {
         const response = await fetch(postPath);
         this.postContent = await response.text();
         this.postContent = md.render(this.postContent);
-        console.log(this.postContent);
+
+        // Find the selected post in the metadata and set the description as the title
+        const selectedPost = this.metadata.find(
+          (post) => post.file === fileName
+        );
+        this.selectedPostDescription = selectedPost.description;
       } catch (error) {
         this.postContent = "# Post not found";
+        this.selectedPostDescription = "";
       }
     },
   },
