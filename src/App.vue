@@ -7,6 +7,7 @@ import Pattern from "./components/Pattern.vue";
   <NavigationBar class="navbar" />
   <Pattern class="pattern" />
   <RouterView class="RouterView" />
+  <Pattern class="footer" />
 </template>
 
 <style scoped>
@@ -16,5 +17,9 @@ import Pattern from "./components/Pattern.vue";
 }
 .RouterView {
   grid-area: RouterView;
+}
+.footer {
+  margin-top: 20px;
+  grid-area: footer;
 }
 </style>
