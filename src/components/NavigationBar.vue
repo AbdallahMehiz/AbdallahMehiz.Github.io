@@ -153,12 +153,6 @@ button:hover .icon {
   width: 100%;
 }
 
-.button:active {
-  color: #454138;
-}
-.button:active:after {
-  background-color: #dcd8c0;
-}
 .router-link-active .button {
   background-color: rgba(0, 0, 0, 0);
 }
