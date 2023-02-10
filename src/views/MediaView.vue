@@ -101,6 +101,7 @@ export default {
   border: 2px solid #dcd8c0;
   padding: 3px;
   height: calc(5rem * 1.41); /* 1.41 vertical aspect ration of covers*/
+  max-width: 5rem;
 }
 img {
   width: 5rem;
