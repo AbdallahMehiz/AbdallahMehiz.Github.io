@@ -1,30 +1,39 @@
 <template>
   <div class="HomeView">
     <div class="profilepic-container">
-      <img src="/assets/profile_pic.jpg" alt="Profile Pic!!!" />
+      <img src="/assets/profile_pic.jpg" alt="" />
     </div>
-    <div class="generalinfo-container">
+    <div class="info">
       <h1 class="name">Abdallah, Mehiz</h1>
       <h2 class="job">Computer Science Student</h2>
       <h3 class="location">Ras-El-Oued, Bourdj-Bou-Arrerridj, Algeria</h3>
-    </div>
-    <div class="info">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio
-        totam fugiat, suscipit repellendus, illo ipsam facilis vitae quos
-        accusantium culpa provident iusto. Ipsum illo voluptatum eius esse culpa
-        obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Expedita quibusdam nulla tempore alias ducimus rerum illo dolorum
-        voluptatum rem debitis quis, quia atque natus numquam maxime dolorem eum
-        saepe odit!
+        Hello, I'm Abdallah Mehiz, a 2<sup>nd</sup> year Computer Science
+        Student at the University of Bachir-El-Ibrahimi.
       </p>
+      <p>
+        Currently Learning Back-end Web Development with ASP.NET Core and
+        Vue.js. Currently Learning Android Development with Kotlin and Android
+        Studio.
+      </p>
+      <p>
+        Planning to learn Embedded Systems, Software Engineering, and Game Dev.
+      </p>
+    </div>
+    <div class="generalinfo-container">
+      <QuickInfoHolder>Age: 19 </QuickInfoHolder>
+      <QuickInfoHolder>Time Zone: GMT+1</QuickInfoHolder>
+      <QuickInfoHolder>Languages: Arabic, English, French</QuickInfoHolder>
     </div>
   </div>
 </template>
 
 <script>
+import QuickInfoHolder from "../components/QuickInfoHolder.vue";
+
 export default {
   name: "HomeView",
+  components: { QuickInfoHolder },
   setup() {
     return {};
   },
@@ -37,8 +46,9 @@ export default {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "profilepic generalinfo generalinfo generalinfo generalinfo generalinfo generalinfo generalinfo"
-    "info info info info info info info info";
+    "profilepic info info info info info info info"
+    "generalinfo info info info info info info info";
+  grid-gap: 20px;
 }
 .profilepic-container {
   grid-area: profilepic;
@@ -55,12 +65,13 @@ export default {
 }
 .generalinfo-container {
   grid-area: generalinfo;
+}
+.info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.info {
   grid-area: info;
+  text-align: center;
 }
 </style>
