@@ -70,10 +70,11 @@ export default {
   grid-area: media;
 }
 .media-type {
-  background-color: #454138;
+  background-color: rgba(69, 65, 56, 0.8);
   color: #dcd8c0;
   max-height: 250px;
   padding: 0 10px 10px 10px;
+  box-shadow: 8px 10px 0px 1px rgba(168, 164, 135, 0.6);
 }
 .medias {
   overflow: scroll;
