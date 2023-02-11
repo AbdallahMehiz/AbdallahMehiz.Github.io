@@ -4,10 +4,12 @@ import Pattern from "./components/Pattern.vue";
 </script>
 
 <template>
-  <NavigationBar class="navbar" />
-  <Pattern class="pattern" />
-  <RouterView class="RouterView" />
-  <Pattern class="footer" />
+  <div class="app" :class="{ arabic: this.$i18n.locale === `ar` }">
+    <NavigationBar class="navbar" />
+    <Pattern class="pattern" />
+    <RouterView class="RouterView" />
+    <Pattern class="footer" />
+  </div>
 </template>
 
 <style scoped>
