@@ -56,7 +56,7 @@ export const translations = {
   ar: {
     message: {
       language: "ar",
-      languageName: "Arabic",
+      languageName: "العربية",
       navigationbar: {
         home: "الصفحة الرئيسية",
         feed: "مدونة",
@@ -110,7 +110,7 @@ export const translations = {
   fr: {
     message: {
       language: "fr",
-      languageName: "French",
+      languageName: "Français",
       navigationbar: {
         home: "Accueil",
         feed: "Flux",
@@ -139,7 +139,7 @@ export const translations = {
         header: "Projets",
       },
       resume: {
-        header: "CV",
+        header: "Curriculum Vitae",
         description:
           "Ici, vous pouvez trouver mon CV, il est toujours en cours de développement car je suis encore étudiant.",
       },
