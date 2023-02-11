@@ -23,4 +23,13 @@
   height: 0.7rem;
   background-color: #454138;
 }
+.arabic .info-holder {
+  box-shadow: 3px 0 0 #454138, 9px 0 0 #dcd8c0, 21px 0 0 #454138,
+    -3px 3px 0 #979381, 3px 3px 0 #979381;
+  margin: 0.3rem 1.3rem 0.3rem 0.2rem;
+}
+.arabic .lil-brown-box {
+  left: 0.3rem;
+  right: auto;
+}
 </style>

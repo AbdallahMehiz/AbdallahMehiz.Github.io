@@ -43,7 +43,11 @@
           <button class="dropdownbtn" @click="showDropdown = !showDropdown">
             {{ $t("message.languageName") }}({{ $t("message.language") }})
           </button>
-          <div class="dropdown-content" v-if="showDropdown">
+          <div
+            class="dropdown-content"
+            v-if="showDropdown"
+            @click.away="showDropdown = false"
+          >
             <a
               class="dropdown-item"
               :class="{ active: this.$i18n.locale === `en` }"
@@ -86,6 +90,9 @@ export default {
     };
   },
   methods: {
+    showDropdownmenu() {
+      this.showDropdown = !this.showDropdown;
+    },
     changeLanguage(lang) {
       this.$i18n.locale = lang;
     },
@@ -327,5 +334,8 @@ button:hover .icon {
 }
 .arabic .fitem {
   transform: rotate(180deg);
+}
+.arabic .button:after {
+  right: 0;
 }
 </style>

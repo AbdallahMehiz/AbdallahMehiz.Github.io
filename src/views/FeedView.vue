@@ -57,7 +57,6 @@ export default {
           (post) => post.file === fileName
         );
         this.selectedPostDescription = selectedPost.description;
-        console.log(this.postContent);
       } catch (error) {
         this.postContent = "# Post not found";
       }
