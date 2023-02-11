@@ -1,11 +1,10 @@
 <template>
   <div>
     <figure>
-      <figcaption>Early Dev Notice!</figcaption>
+      <figcaption>{{ $t("message.earlydevnotice.title") }}</figcaption>
       <div>
         <p style="margin: 0 0">
-          This website is still in development, many things are incomplete and
-          expected to not work properly.
+          {{ $t("message.earlydevnotice.message") }}
         </p>
       </div>
     </figure>

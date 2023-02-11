@@ -1,10 +1,9 @@
 <template>
   <div class="resume-view">
     <div class="header">
-      <h1>Resume</h1>
+      <h1>{{ $t("message.resume.header") }}</h1>
       <h3>
-        Here you can find my resume, it's still a work in progress as i am still
-        a student.
+        {{ $t("message.resume.description") }}
       </h3>
     </div>
     <EarlyDevNotice class="devnotice" />

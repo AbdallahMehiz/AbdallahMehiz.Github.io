@@ -1,13 +1,13 @@
 <template>
   <div class="ContactView">
     <div class="header">
-      <h1>Socials</h1>
-      <h3>Here you'll find most if not all of my social accounts.</h3>
+      <h1>{{ $t("message.socials.header") }}</h1>
+      <h3>{{ $t("message.socials.description") }}</h3>
     </div>
     <EarlyDevNotice class="DevNotice" />
     <FigureComponent
-      figureTitle="Notice!"
-      figureText="Under here are all of my social links and contact info. A contact info being here doesn't necessarily means i use it regularly."
+      :figureTitle="$t(`message.socials.notice.title`)"
+      :figureText="$t(`message.socials.notice.message`)"
       class="notice"
     />
     <div class="socials">

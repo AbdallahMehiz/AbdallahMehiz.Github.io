@@ -1,10 +1,9 @@
 <template>
   <div>
     <div class="title">
-      <h1>Media</h1>
+      <h1>{{ $t("message.media.header") }}</h1>
       <p>
-        Here you can find some of the media i enjoyed watching, playing &.
-        reading
+        {{ $t("message.media.description") }}
       </p>
     </div>
     <EarlyDevNotice class="EarlyDevNotice" />
