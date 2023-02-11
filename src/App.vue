@@ -4,7 +4,7 @@ import Pattern from "./components/Pattern.vue";
 </script>
 
 <template>
-  <div class="app" :class="{ arabic: this.$i18n.locale === `ar` }">
+  <div class="app" :class="{ arabic: $i18n.locale === `ar` }">
     <NavigationBar class="navbar" />
     <Pattern class="pattern" />
     <RouterView class="RouterView" />
