@@ -7,6 +7,10 @@ export default defineConfig({
     host: true,
     port: 6969,
   },
+  define: {
+    __VUE_I18N_FULL_INSTALL__: true,
+    __VUE_I18N_LEGACY_API__: false,
+  },
   plugins: [vue()],
   assetsInclude: ["**/*.md"],
 });

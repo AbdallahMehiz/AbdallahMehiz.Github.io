@@ -8,7 +8,9 @@ import { createI18n } from "vue-i18n";
 import { translations } from "./translations";
 
 const i18n = createI18n({
-  locale: ["en", "fr", "ar"].includes(navigator.language),
+  locale: ["en", "fr", "ar"].includes(navigator.language)
+    ? navigator.language
+    : "en",
   messages: translations,
 });
 
