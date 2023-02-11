@@ -69,4 +69,11 @@ p a {
 
 .arabic {
   font-family: "cairo", sans-serif;
+  direction: rtl;
+}
+
+.arabic h1,
+.arabic h2,
+.arabic h3 {
+  letter-spacing: 0;
 }

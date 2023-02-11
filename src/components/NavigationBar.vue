@@ -136,7 +136,8 @@ export default {
   align-items: center;
   padding: 0.3rem 0.5rem;
   height: 30px;
-  width: 100px;
+  max-width: 10rem;
+  min-width: 7rem;
   font-size: 1em;
   text-rendering: optimizeLegibility;
   border: none;
@@ -310,5 +311,21 @@ button:hover .icon {
 .active {
   background-color: #454138;
   color: #dcd8c0;
+}
+.arabic .icon {
+  margin: 0 0 0 0.3rem;
+}
+
+.arabic .item:last-child {
+  margin: 0 auto 0 0;
+}
+.arabic .dropdown-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(100%, 0);
+}
+.arabic .fitem {
+  transform: rotate(180deg);
 }
 </style>
