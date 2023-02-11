@@ -1,13 +1,13 @@
 <template>
   <div class="ContactView">
     <div class="header">
-      <h1>{{ $t("message.socials.header") }}</h1>
-      <h3>{{ $t("message.socials.description") }}</h3>
+      <h1>{{ $t("socials.header") }}</h1>
+      <h3>{{ $t("socials.description") }}</h3>
     </div>
     <EarlyDevNotice class="DevNotice" />
     <FigureComponent
-      :figureTitle="$t(`message.socials.notice.title`)"
-      :figureText="$t(`message.socials.notice.message`)"
+      :figureTitle="$t(`socials.notice.title`)"
+      :figureText="$t(`socials.notice.message`)"
       class="notice"
     />
     <div class="socials">

@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="header">
-      <h1 class="title">{{ $t("message.feed.header") }}</h1>
+      <h1 class="title">{{ $t("feed.header") }}</h1>
       <EarlyDevNotice class="devnotice" />
     </div>
     <div class="feed">
-      <FigureComponent :figureTitle="$t(`message.feed.postlist.title`)">
+      <FigureComponent :figureTitle="$t(`feed.postlist.title`)">
         <div class="list">
           <CustomButton
             v-for="metadata in metadata"

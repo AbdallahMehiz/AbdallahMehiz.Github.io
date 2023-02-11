@@ -1,9 +1,9 @@
 <template>
   <div class="resume-view">
     <div class="header">
-      <h1>{{ $t("message.resume.header") }}</h1>
+      <h1>{{ $t("resume.header") }}</h1>
       <h3>
-        {{ $t("message.resume.description") }}
+        {{ $t("resume.description") }}
       </h3>
     </div>
     <EarlyDevNotice class="devnotice" />

@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="title">
-      <h1>{{ $t("message.media.header") }}</h1>
+      <h1>{{ $t("media.header") }}</h1>
       <p>
-        {{ $t("message.media.description") }}
+        {{ $t("media.description") }}
       </p>
     </div>
     <EarlyDevNotice class="EarlyDevNotice" />

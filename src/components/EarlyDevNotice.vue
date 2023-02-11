@@ -1,10 +1,10 @@
 <template>
   <div>
     <figure>
-      <figcaption>{{ $t("message.earlydevnotice.title") }}</figcaption>
+      <figcaption>{{ $t("earlydevnotice.title") }}</figcaption>
       <div>
         <p style="margin: 0 0">
-          {{ $t("message.earlydevnotice.message") }}
+          {{ $t("earlydevnotice.message") }}
         </p>
       </div>
     </figure>

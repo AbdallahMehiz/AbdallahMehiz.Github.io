@@ -5,43 +5,47 @@
       <router-link class="item" to="/">
         <button class="button">
           <i class="icon-home icon"></i>
-          {{ $t("message.navigationbar.home") }}
+          {{ $t("navigationbar.home") }}
         </button>
       </router-link>
       <router-link class="item" to="/feed">
         <button class="button">
           <i class="icon-rss icon"></i>
-          {{ $t("message.navigationbar.feed") }}
+          {{ $t("navigationbar.feed") }}
         </button>
       </router-link>
       <router-link class="item" to="/media">
         <button class="button">
           <i class="icon-photo-film icon"></i>
-          {{ $t("message.navigationbar.media") }}
+          {{ $t("navigationbar.media") }}
         </button>
       </router-link>
       <router-link class="item" to="/projects">
         <button class="button">
           <i class="icon-book icon"></i>
-          {{ $t("message.navigationbar.projects") }}
+          {{ $t("navigationbar.projects") }}
         </button>
       </router-link>
       <router-link class="item" to="/resume">
         <button class="button">
           <i class="icon-file icon"></i>
-          {{ $t("message.navigationbar.resume") }}
+          {{ $t("navigationbar.resume") }}
         </button>
       </router-link>
       <router-link class="item" to="/contact">
         <button class="button">
           <i class="icon-envelope icon"></i>
-          {{ $t("message.navigationbar.contact") }}
+          {{ $t("navigationbar.contact") }}
         </button>
       </router-link>
       <div class="item">
         <div class="dropdown-container">
-          <button class="dropdownbtn" @click="showDropdown = !showDropdown">
-            {{ $t("message.languageName") }}({{ $t("message.language") }})
+          <button
+            :class="{ busy: showDropdown }"
+            class="dropdownbtn"
+            @click="showDropdown = !showDropdown"
+          >
+            {{ $t("languageName") }}({{ $t("language") }})
           </button>
           <div
             class="dropdown-content"
@@ -52,19 +56,19 @@
               class="dropdown-item"
               :class="{ active: this.$i18n.locale === `en` }"
               @click="changeLanguage('en')"
-              >en</a
+              >English (en)</a
             >
             <a
               class="dropdown-item"
               :class="{ active: this.$i18n.locale === `fr` }"
               @click="changeLanguage('fr')"
-              >fr</a
+              >Français (fr)</a
             >
             <a
               class="dropdown-item"
               :class="{ active: this.$i18n.locale === `ar` }"
               @click="changeLanguage('ar')"
-              >ar</a
+              >العربية (ar)</a
             >
           </div>
         </div>
@@ -313,12 +317,19 @@ button:hover .icon {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+}
 .dropdown-item:hover {
   cursor: pointer;
 }
 .active {
-  background-color: #454138;
   color: #dcd8c0;
+  animation: blink 1.6s infinite;
 }
 .arabic .icon {
   margin: 0 0 0 0.3rem;
@@ -338,5 +349,8 @@ button:hover .icon {
 }
 .arabic .button:after {
   right: 0;
+}
+
+.busy {
 }
 </style>

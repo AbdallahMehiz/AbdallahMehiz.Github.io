@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ $t("message.projects.header") }}</h1>
+  <h1>{{ $t("projects.header") }}</h1>
 </template>
 
 <script></script>

@@ -1,15 +1,11 @@
 <template>
   <div class="not-found-view">
-    <h1 class="title">{{ $t("message.notFound.header") }}</h1>
-    <h2 class="subtitle">{{ $t("message.notFound.subtitle") }}</h2>
+    <h1 class="title">{{ $t("notFound.header") }}</h1>
+    <h2 class="subtitle">{{ $t("notFound.subtitle") }}</h2>
     <p class="description">
-      {{ $t("message.notFound.description") }}
+      {{ $t("notFound.description") }}
     </p>
-    <CustomButton
-      class="button"
-      :btnText="$t(`message.notFound.button`)"
-      btnLink="/"
-    />
+    <CustomButton class="button" :btnText="$t(`notFound.button`)" btnLink="/" />
   </div>
 </template>
 
