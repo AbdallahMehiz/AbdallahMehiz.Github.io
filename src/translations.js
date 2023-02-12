@@ -28,6 +28,8 @@ export const translations = {
     },
     projects: {
       header: "Projects",
+      description:
+        "Here you can find some of the projects i've worked on, some of them as a hobby and some are for university. maybe you'll find something interesting. :)",
     },
     resume: {
       header: "Resume",
@@ -80,6 +82,8 @@ export const translations = {
     },
     projects: {
       header: "مشاريع",
+      description:
+        "هنا يمكنك العثور على بعض المشاريع التي عملت عليها ، بعضها كهواية وبعضها للجامعة. ربما تجد شيئا مثيرا للاهتمام.",
     },
     resume: {
       header: "سيرة ذاتية",
@@ -92,7 +96,7 @@ export const translations = {
       notice: {
         title: "تنبيه!",
         message:
-          "تحت هنا يوجد جميع روابط ومعلومات الاتصال الاجتماعي. ولا يعني وجود معلومات الاتصال هنا أنني استخدمها بانتظام.",
+          "هنا ستجد أغلب حسابات التواصل الاجتماعي الخاصة بي. وليكن في علمك ان امتلاكي لحساب تواصل اجتماعي لا يعني انني استعمله بانتظام.",
       },
     },
     notFound: {
@@ -131,6 +135,7 @@ export const translations = {
     },
     projects: {
       header: "Projets",
+      description: "Ici, vous pouvez trouver certains de mes projets.",
     },
     resume: {
       header: "Curriculum Vitae",

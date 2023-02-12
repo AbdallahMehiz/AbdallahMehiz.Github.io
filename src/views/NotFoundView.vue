@@ -5,18 +5,22 @@
     <p class="description">
       {{ $t("notFound.description") }}
     </p>
-    <CustomButton class="button" :btnText="$t(`notFound.button`)" btnLink="/" />
+    <CustomRouterButton
+      class="button"
+      :btnText="$t(`notFound.button`)"
+      btnLink="/"
+    />
   </div>
 </template>
 
 <script>
-import CustomButton from "../components/CustomButton.vue";
+import CustomRouterButton from "../components/CustomRouterButton.vue";
 export default {
   name: "NotFoundView",
   setup() {
     return {};
   },
-  components: { CustomButton },
+  components: { CustomRouterButton },
 };
 </script>
 

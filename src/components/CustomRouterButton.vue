@@ -1,7 +1,7 @@
 <template>
-  <a class="button" :href="btnLink">
+  <router-link class="button" :to="btnLink">
     {{ btnText }}
-  </a>
+  </router-link>
 </template>
 
 <script>
