@@ -68,6 +68,11 @@ export default {
   grid-gap: 20px;
   grid-area: media;
 }
+@media (max-width: 1000px) {
+  .media-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .media-type {
   background-color: rgba(69, 65, 56, 0.8);
   color: #dcd8c0;

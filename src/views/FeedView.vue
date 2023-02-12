@@ -96,6 +96,11 @@ export default {
   grid-template-areas: "list  post post post";
   grid-gap: 20px;
 }
+@media (max-width: 1000px) {
+  .feed {
+    display: block;
+  }
+}
 .post {
   grid-area: post;
 }

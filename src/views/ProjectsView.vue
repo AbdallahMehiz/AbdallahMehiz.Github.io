@@ -63,4 +63,9 @@ export default {
   grid-gap: 1rem;
   grid-area: projects;
 }
+@media (max-width: 1000px) {
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>
