@@ -1,0 +1,1 @@
+import{_ as e,o as n,c as o,t as s}from"./index-226575e3.js";const c={name:"CustomRouterButton",props:{btnText:String,btnLink:String},setup(){return{}}},_=["href"];function a(r,u,t,i,p,d){return n(),o("a",{class:"button",href:t.btnLink},s(t.btnText),9,_)}const f=e(c,[["render",a],["__scopeId","data-v-cc72483a"]]);export{f as C};
