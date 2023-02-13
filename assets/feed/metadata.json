@@ -43,5 +43,30 @@
     "keywords": [],
     "description": "happy eid everyone",
     "file": "happy-eid"
+  },
+  {
+    "id": 4,
+    "title": "Windows is Powerful",
+    "date": [2023, 2, 13, 9, 46],
+    "author": "Abdallah Mehiz",
+    "keywords": ["windows", "terminal", "linux", "wsl"],
+    "description": "Windows is more powerful than i thought",
+    "file": "windows-is-powerful"
+  },
+  {
+    "id": 5,
+    "title": "Using WSA with Android Studio",
+    "date": [2023, 2, 13, 10, 5],
+    "author": "Abdallah Mehiz",
+    "keywords": [
+      "windows",
+      "terminal",
+      "linux",
+      "wsa",
+      "android",
+      "android studio"
+    ],
+    "description": "Using WSA with Android Studio is a game changer, for me at least",
+    "file": "android-studio-with-wsa"
   }
 ]
