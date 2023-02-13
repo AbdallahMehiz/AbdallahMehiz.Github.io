@@ -106,6 +106,11 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 100px) {
+  .navigation-bar {
+    display: none;
+  }
+}
 .navigation-bar {
   grid-area: nav;
 }

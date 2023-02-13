@@ -1,6 +1,7 @@
 <script setup>
 import NavigationBar from "./components/NavigationBar.vue";
 import Pattern from "./components/Pattern.vue";
+import NavigationButton from "./components/NavigationButton.vue";
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import Pattern from "./components/Pattern.vue";
     <NavigationBar class="navbar" />
     <Pattern class="pattern" />
     <RouterView class="RouterView" />
+    <NavigationButton class="navigation-button" />
     <Pattern class="footer" />
   </div>
 </template>
@@ -23,5 +25,10 @@ import Pattern from "./components/Pattern.vue";
 .footer {
   margin-top: 20px;
   grid-area: footer;
+}
+.navigation-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
 }
 </style>

@@ -7,7 +7,7 @@
     <div class="feed">
       <FigureComponent :figureTitle="$t(`feed.postlist.title`)">
         <div class="list">
-          <CustomButton
+          <CustomRouterButton
             v-for="metadata in metadata"
             class="button"
             :btnLink="`#${metadata.file}`"
@@ -25,7 +25,7 @@
 
 <script>
 import FigureComponent from "../components/FigureComponent.vue";
-import CustomButton from "../components/CustomButton.vue";
+import CustomRouterButton from "../components/CustomRouterButton.vue";
 import EarlyDevNotice from "../components/EarlyDevNotice.vue";
 
 import MarkdownIt from "markdown-it";
@@ -36,7 +36,7 @@ md.use(markdownItAttrs);
 
 export default {
   name: "FeedView",
-  components: { CustomButton, FigureComponent, EarlyDevNotice },
+  components: { CustomRouterButton, FigureComponent, EarlyDevNotice },
   data() {
     return {
       metadata,
