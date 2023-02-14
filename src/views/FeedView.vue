@@ -8,11 +8,11 @@
       <FigureComponent :figureTitle="$t(`feed.postlist.title`)">
         <div class="list">
           <CustomRouterButton
-            v-for="metadata in metadata"
+            v-for="post in posts"
             class="button"
-            :btnLink="`#${metadata.file}`"
-            :btnText="metadata.title"
-            @click="selectPost(metadata.file)"
+            :btnLink="`#${post.file}`"
+            :btnText="post.title"
+            @click="selectPost(post.file)"
           />
         </div>
       </FigureComponent>
@@ -30,7 +30,7 @@ import EarlyDevNotice from "../components/EarlyDevNotice.vue";
 
 import MarkdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
-import metadata from "/assets/feed/metadata.json";
+import posts from "../assets/data/posts.json";
 const md = new MarkdownIt();
 md.use(markdownItAttrs);
 
@@ -39,7 +39,7 @@ export default {
   components: { CustomRouterButton, FigureComponent, EarlyDevNotice },
   data() {
     return {
-      metadata,
+      posts,
       postContent: "",
       selectedPostDescription: "",
     };
@@ -53,9 +53,7 @@ export default {
         const response = await fetch(postPath);
         this.postContent = await response.text();
         this.postContent = md.render(this.postContent);
-        const selectedPost = this.metadata.find(
-          (post) => post.file === fileName
-        );
+        const selectedPost = this.posts.find((post) => post.file === fileName);
         this.selectedPostDescription = selectedPost.description;
       } catch (error) {
         this.postContent = "# Post not found";

@@ -26,7 +26,7 @@
 import FigureComponent from "../components/FigureComponent.vue";
 import SocialComponent from "../components/SocialComponent.vue";
 import EarlyDevNotice from "../components/EarlyDevNotice.vue";
-import socials from "/assets/data/socials.json";
+import socials from "../assets/data/socials.json";
 
 export default {
   name: "ContactView",

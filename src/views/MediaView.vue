@@ -30,7 +30,7 @@
 
 <script>
 import EarlyDevNotice from "../components/EarlyDevNotice.vue";
-import media from "/assets/media/media.json";
+import media from "../assets/data/media.json";
 
 export default {
   name: "MediaView",

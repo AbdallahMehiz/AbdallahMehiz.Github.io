@@ -1,7 +1,7 @@
 <template>
   <div class="HomeView">
     <div class="profilepic-container">
-      <img src="/assets/profile_pic.jpg" alt="" />
+      <img src="../assets/profile_pic.jpg" alt="" />
     </div>
     <div class="info">
       <h1 class="name">Abdallah, Mehiz</h1>

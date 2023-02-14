@@ -22,7 +22,7 @@
 <script>
 import ProjectComponent from "../components/ProjectComponent.vue";
 import EarlyDevNotice from "../components/EarlyDevNotice.vue";
-import Projects from "/assets/projects/projects.json";
+import Projects from "../assets/data/projects.json";
 
 export default {
   name: "ProjectsView",
@@ -34,9 +34,6 @@ export default {
     return {
       projects: Projects,
     };
-  },
-  mounted() {
-    console.log(Projects);
   },
 };
 </script>
