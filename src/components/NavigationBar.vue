@@ -112,6 +112,7 @@ export default {
   }
 }
 .navigation-bar {
+  height: 50px;
   grid-area: nav;
 }
 .icon {
@@ -125,7 +126,7 @@ export default {
 }
 .items {
   width: 100%;
-  padding: calc((50px - 30px) / 2) 0;
+  padding: calc((50px - 30px) / 2);
   display: flex;
 }
 .item:last-child {

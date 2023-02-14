@@ -51,7 +51,7 @@ h6 {
 .app {
   display: grid;
   grid-template-columns: 3% 94% 3%;
-  grid-template-rows: 50px 30px auto 30px;
+  grid-template-rows: auto 30px auto 30px;
   grid-template-areas:
     "...   nav ..."
     "pattern pattern pattern"

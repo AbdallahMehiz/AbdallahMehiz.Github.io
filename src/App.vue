@@ -26,7 +26,24 @@ import NavigationButton from "./components/NavigationButton.vue";
   margin-top: 20px;
   grid-area: footer;
 }
+@media (max-width: 1000px) {
+  .RouterView {
+    grid-template-areas: "pattern" "RouterView" "footer";
+  }
+  .navbar {
+    display: none;
+  }
+  .navigation-button {
+    display: block;
+  }
+}
+@media (min-width: 1001px) {
+  .navigation-button {
+    display: none;
+  }
+}
 .navigation-button {
+  z-index: 2;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
