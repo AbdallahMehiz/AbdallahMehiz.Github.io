@@ -14,17 +14,17 @@
         </div>
         <div class="medias">
           <div
-            v-for="media in mediatype.media"
-            :key="media.title"
+            v-for="title in mediatype.media"
+            :key="title.title"
             class="media"
           >
-            <a class="media-cover" :href="media.link">
-              <img :src="media.cover" />
+            <a class="media-cover" :href="title.link">
+              <img :src="title.cover" />
             </a>
-            <a class="media-title" :href="media.link">
-              {{ media.title }}
+            <a class="media-title" :href="title.link">
+              {{ title.title }}
             </a>
-            <p class="media-summary">{{ media.summary }}</p>
+            <p class="media-summary">{{ title.summary }}</p>
           </div>
         </div>
       </div>
