@@ -8,12 +8,16 @@
     </div>
     <EarlyDevNotice class="EarlyDevNotice" />
     <div class="media-container">
-      <div v-for="media in media" :key="media.type" class="media-type">
+      <div v-for="mediatype in media" :key="mediatype.type" class="media-type">
         <div class="type">
-          {{ media.type }}
+          {{ mediatype.type }}
         </div>
         <div class="medias">
-          <div v-for="media in media.media" :key="media.title" class="media">
+          <div
+            v-for="media in mediatype.media"
+            :key="media.title"
+            class="media"
+          >
             <a class="media-cover" :href="media.link">
               <img :src="media.cover" />
             </a>
