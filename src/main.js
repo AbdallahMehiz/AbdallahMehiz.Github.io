@@ -12,4 +12,4 @@ const i18n = createI18n({
   messages: translations,
 });
 
-const app = createApp(App).use(router).use(i18n).mount("#app");
+createApp(App).use(router).use(i18n).mount("#app");

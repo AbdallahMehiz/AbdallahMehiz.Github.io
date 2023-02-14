@@ -8,8 +8,14 @@
 export default {
   name: "CustomRouterButton",
   props: {
-    btnText: String,
-    btnLink: String,
+    btnText: {
+      type: String,
+      default: "Button",
+    },
+    btnLink: {
+      type: String,
+      default: "#",
+    },
   },
   setup() {
     return {};

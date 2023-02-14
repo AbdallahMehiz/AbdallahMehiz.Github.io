@@ -15,8 +15,14 @@ export default {
     return {};
   },
   props: {
-    figureTitle: String,
-    figureText: String,
+    figureTitle: {
+      type: String,
+      default: "Figure Title",
+    },
+    figureText: {
+      type: String,
+      default: "Figure Text",
+    },
   },
 };
 </script>

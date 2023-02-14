@@ -5,10 +5,11 @@
       <EarlyDevNotice class="devnotice" />
     </div>
     <div class="feed">
-      <FigureComponent :figureTitle="$t(`feed.postlist.title`)">
+      <FigureComponent :figureTitle="$t(`feed.postlist.title`)" figureText="">
         <div class="list">
           <CustomRouterButton
             v-for="post in posts"
+            :key="post.file"
             class="button"
             :btnLink="`#${post.file}`"
             :btnText="post.title"
@@ -16,7 +17,11 @@
           />
         </div>
       </FigureComponent>
-      <FigureComponent class="post" :figureTitle="selectedPostDescription">
+      <FigureComponent
+        class="post"
+        :figureTitle="selectedPostDescription"
+        figureText=""
+      >
         <div class="postContent" v-html="postContent"></div>
       </FigureComponent>
     </div>

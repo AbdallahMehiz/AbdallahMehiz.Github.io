@@ -10,6 +10,7 @@
     <div class="projects-container">
       <ProjectComponent
         v-for="project in projects"
+        :key="project.title"
         :projectTitle="project.title"
         :projectImage="project.image"
         :projectDescription="project.description"

@@ -1,16 +1,16 @@
 <script setup>
 import NavigationBar from "./components/NavigationBar.vue";
-import Pattern from "./components/Pattern.vue";
+import NavPattern from "./components/Pattern.vue";
 import NavigationButton from "./components/NavigationButton.vue";
 </script>
 
 <template>
   <div class="app" :class="{ arabic: $i18n.locale === `ar` }">
     <NavigationBar class="navbar" />
-    <Pattern class="pattern" />
+    <NavPattern class="pattern" />
     <RouterView class="RouterView" />
     <NavigationButton class="navigation-button" />
-    <Pattern class="footer" />
+    <NavPattern class="footer" />
   </div>
 </template>
 

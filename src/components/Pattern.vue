@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "Pattern",
+  name: "NavPattern",
   setup() {
     return {};
   },

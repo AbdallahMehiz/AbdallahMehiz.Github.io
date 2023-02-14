@@ -8,7 +8,8 @@
     <div class="links-container">
       <CustomButton
         class="link"
-        v-for="link in projectLinks"
+        v-for="projectlink in projectLinks"
+        :key="projectlink.name"
         :btnLink="link.link"
         :text="link.name"
       />
@@ -28,10 +29,22 @@ export default {
     CustomButton,
   },
   props: {
-    projectTitle: String,
-    projectImage: String,
-    projectDescription: String,
-    projectLinks: Array,
+    projectTitle: {
+      type: String,
+      default: "Project Title",
+    },
+    projectImage: {
+      type: String,
+      default: "Project Image",
+    },
+    projectDescription: {
+      type: String,
+      default: "Project Description",
+    },
+    projectLinks: {
+      type: Array,
+      default: () => [],
+    },
   },
 };
 </script>

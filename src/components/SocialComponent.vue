@@ -13,9 +13,18 @@
 export default {
   name: "SocialComponent",
   props: {
-    socialPlatform: String,
-    socialLink: String,
-    socialIcon: String,
+    socialPlatform: {
+      type: String,
+      default: "Social Platform",
+    },
+    socialLink: {
+      type: String,
+      default: "#",
+    },
+    socialIcon: {
+      type: String,
+      default: "icon-home",
+    },
   },
   setup() {
     return {};

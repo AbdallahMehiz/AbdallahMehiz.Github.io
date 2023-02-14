@@ -49,11 +49,7 @@
             <i class="icon icon-translate"></i>
             {{ $t("languageName") }}({{ $t("language") }})
           </button>
-          <div
-            class="dropdown-content"
-            v-if="showDropdown"
-            @click.away="showDropdown = false"
-          >
+          <div class="dropdown-content" v-if="showDropdown">
             <a
               class="dropdown-item"
               :class="{ active: this.$i18n.locale === `en` }"
