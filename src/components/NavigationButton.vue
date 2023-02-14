@@ -8,11 +8,7 @@
       >
         Show Menu
       </div>
-      <div
-        v-if="showNavMenu"
-        @click="showNavMenu = !showNavMenu"
-        class="button-content"
-      >
+      <div v-if="showNavMenu" class="button-content">
         <router-link class="menu-item" to="/">
           <i class="icon icon-home"></i>Home
         </router-link>
@@ -20,19 +16,47 @@
           <i class="icon icon-rss"></i>Feed
         </router-link>
         <router-link class="menu-item" to="/media">
-          <i class="icon icon-photo-film"></i>Media
+          <i class="icon icon-photo-film-music"></i>Media
         </router-link>
         <router-link class="menu-item" to="/projects">
-          <i class="icon icon-book"></i>Projects
+          <i class="icon icon-folder"></i>Projects
         </router-link>
         <router-link class="menu-item" to="/resume">
-          <i class="icon icon-file"></i>Resume
+          <i class="icon icon-document"></i>Resume
         </router-link>
         <router-link class="menu-item" to="contact">
           <i class="icon icon-envelope"></i>Contact
         </router-link>
-        <div class="menu-item">change lang</div>
-        <div class="menu-item">close</div>
+        <div
+          @click="showLanguageSelector = !showLanguageSelector"
+          class="menu-item"
+        >
+          <i class="icon icon-translate"></i>Language
+          <div v-if="showLanguageSelector" class="language-selector">
+            <a
+              class="dropdown-item"
+              :class="{ active: this.$i18n.locale === `en` }"
+              @click="changeLanguage('en')"
+              >English (en)</a
+            >
+            <a
+              class="dropdown-item"
+              :class="{ active: this.$i18n.locale === `fr` }"
+              @click="changeLanguage('fr')"
+              >Français (fr)
+            </a>
+            <a
+              class="dropdown-item"
+              :class="{ active: this.$i18n.locale === 'ar' }"
+              @click="changeLanguage('ar')"
+            >
+              العربية (ar)</a
+            >
+          </div>
+        </div>
+        <div @click="showNavMenu = !showNavMenu" class="menu-item">
+          <i class="icon icon-xmark"></i>close
+        </div>
       </div>
     </div>
   </div>
@@ -48,13 +72,21 @@ export default {
   data() {
     return {
       showNavMenu: false,
+      showLanguageSelector: false,
     };
+  },
+  methods: {
+    changeLanguage(lang) {
+      this.$i18n.locale = lang;
+      localStorage.setItem("language", lang);
+    },
   },
 };
 </script>
 
 <style scoped>
 .button-container {
+  direction: ltr !important;
   display: flex;
   text-align: center;
   align-items: center;
@@ -70,17 +102,41 @@ export default {
   width: 210px;
   height: 210px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   background-color: #dcd8c0;
   padding: 8px;
 }
-
 .menu-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
 }
 .icon {
   font-size: 1.8rem;
+}
+.language-selector {
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  height: 226px;
+  display: grid;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  background-color: #dcd8c0;
+}
+.dropdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  width: 75px;
+}
+.dropdown-item.active {
+  background-color: #454138;
+  color: #dcd8c0;
 }
 </style>

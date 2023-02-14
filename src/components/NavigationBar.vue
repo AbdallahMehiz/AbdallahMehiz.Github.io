@@ -16,19 +16,19 @@
       </router-link>
       <router-link class="item" to="/media">
         <button class="button">
-          <i class="icon-photo-film icon"></i>
+          <i class="icon-photo-film-music icon"></i>
           {{ $t("navigationbar.media") }}
         </button>
       </router-link>
       <router-link class="item" to="/projects">
         <button class="button">
-          <i class="icon-book icon"></i>
+          <i class="icon-folder icon"></i>
           {{ $t("navigationbar.projects") }}
         </button>
       </router-link>
       <router-link class="item" to="/resume">
         <button class="button">
-          <i class="icon-file icon"></i>
+          <i class="icon-document icon"></i>
           {{ $t("navigationbar.resume") }}
         </button>
       </router-link>
@@ -44,7 +44,9 @@
             :class="{ busy: showDropdown }"
             class="dropdownbtn"
             @click="showDropdown = !showDropdown"
+            style="width: fit-content"
           >
+            <i class="icon icon-translate"></i>
             {{ $t("languageName") }}({{ $t("language") }})
           </button>
           <div
