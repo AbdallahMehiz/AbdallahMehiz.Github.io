@@ -1,5 +1,6 @@
 <template>
   <router-link class="button" :to="btnLink">
+    <slot></slot>
     {{ btnText }}
   </router-link>
 </template>

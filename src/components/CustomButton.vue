@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "CustomRouterButton",
+  name: "CustomButton",
   props: {
     btnText: {
       type: String,

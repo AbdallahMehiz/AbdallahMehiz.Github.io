@@ -1,24 +1,34 @@
 <template>
-  <figure>
-    <figcaption>{{ projectTitle }}</figcaption>
-    <div class="image-holder">
+  <div style="border: 2px solid #454138; width: 25rem">
+    <div class="project-container">
       <img :src="projectImage" />
+      <h3 class="project-title">{{ projectTitle }}</h3>
+      <p class="project-description">{{ projectDescription }}</p>
+      <div class="tags-container">
+        <tag
+          v-for="tag in projectTags"
+          :key="tag"
+          :tag="tag.name"
+          :class="tag.class"
+        />
+      </div>
+      <div class="links-container">
+        <CustomButton
+          class="link"
+          v-for="projectlink in projectLinks"
+          :key="projectlink.name"
+          :btnLink="projectlink.link"
+          :text="projectlink.name"
+        >
+        </CustomButton>
+      </div>
     </div>
-    <p class="project-description">{{ projectDescription }}</p>
-    <div class="links-container">
-      <CustomButton
-        class="link"
-        v-for="projectlink in projectLinks"
-        :key="projectlink.name"
-        :btnLink="projectlink.link"
-        :text="projectlink.name"
-      />
-    </div>
-  </figure>
+  </div>
 </template>
 
 <script>
 import CustomButton from "./CustomButton.vue";
+import tag from "./TagComponent.vue";
 
 export default {
   name: "FigureComponent",
@@ -27,6 +37,7 @@ export default {
   },
   components: {
     CustomButton,
+    tag,
   },
   props: {
     projectTitle: {
@@ -45,63 +56,62 @@ export default {
       type: Array,
       default: () => [],
     },
+    projectTags: {
+      type: Array,
+      default: () => [],
+    },
   },
 };
 </script>
 <style scoped>
-figure {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  margin-bottom: 1rem;
-  background-color: #dcd8c0;
-  height: fit-content;
-  padding-bottom: 0.5rem;
-  /* Add ellipsis to paragraph */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 300px;
-}
-figure > :not(figcaption) {
-  margin: 0.5rem;
-}
-figure > figcaption {
-  order: -1;
-  padding: 0 0.5rem 0 0.5rem;
+.project-title {
   font-size: 1.2rem;
-  background-color: #3f3b33;
-  color: #a8a487;
-  align-items: center;
+  font-weight: 600;
+  margin: 0.5rem;
 }
 .image-holder {
   background: #aba58e;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 175px;
+  width: calc(175px * 2);
 }
 img {
-  max-height: 9rem;
+  height: 175px;
+  width: inherit;
+  border-radius: 5px;
 }
+.project-container {
+  transition: 500ms;
+  width: 24rem;
+  height: 23.7rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.links-container:last-child {
+  margin-top: auto;
+}
+.project-container:hover {
+  background: #aba58e;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tags-container {
+  margin-bottom: 0.5rem;
+}
+
 .project-description {
+  /* ellipsis on 3rd line */
   display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  margin: 0 0.5rem;
-}
-.links-container {
-  position: absolute;
-  bottom: 0.5rem;
-}
-.link {
-  margin: 0 0.5rem 0 0;
-}
-.arabic figure {
-  height: 340px;
-}
-.arabic .links-container {
-  display: flex;
+  overflow: hidden;
 }
 </style>

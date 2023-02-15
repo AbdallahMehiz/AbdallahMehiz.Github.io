@@ -8,6 +8,12 @@
         "name": "Repository",
         "link": "https://github.com/AbdallahMehiz/Jaky"
       }
+    ],
+    "tags": [
+      {
+        "name": "Work in progress",
+        "class": "wip"
+      }
     ]
   },
   {
@@ -29,6 +35,12 @@
       {
         "name": "Repository",
         "link": "https://github.com/AbdallahMehiz/RusKis"
+      }
+    ],
+    "tags": [
+      {
+        "name": "Archived",
+        "class": "arch"
       }
     ]
   },

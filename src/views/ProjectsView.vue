@@ -15,6 +15,7 @@
         :projectImage="project.image"
         :projectDescription="project.description"
         :projectLinks="project.links"
+        :projectTags="project.tags"
       />
     </div>
   </div>
