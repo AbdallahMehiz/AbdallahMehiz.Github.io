@@ -10,8 +10,8 @@
         class="link"
         v-for="projectlink in projectLinks"
         :key="projectlink.name"
-        :btnLink="link.link"
-        :text="link.name"
+        :btnLink="projectlink.link"
+        :text="projectlink.name"
       />
     </div>
   </figure>

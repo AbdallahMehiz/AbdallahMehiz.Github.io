@@ -50,11 +50,21 @@ export default {
     "generalinfo info info info info info info info";
   grid-gap: 20px;
 }
+@media (max-width: 1000px) {
+  .HomeView {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "profilepic"
+      "generalinfo"
+      "info";
+  }
+}
 .profilepic-container {
   grid-area: profilepic;
   border: 3px solid #454138;
   padding: 2px;
   display: flex;
+  margin: auto;
 }
 .profilepic-container img {
   width: 300px;
