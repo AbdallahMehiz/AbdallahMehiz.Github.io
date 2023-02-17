@@ -115,11 +115,11 @@ export default {
 }
 .icon {
   display: inline-block;
-  color: #bab5a1;
-  background-color: #454138;
+  color: var(--color-text-primary);
+  background-color: var(--color-secondary);
   margin-right: 0.3rem;
   transition: 0.2s;
-  border: 3px solid #454138;
+  border: 3px solid var(--color-secondary);
   font-size: 0.8rem;
 }
 .items {
@@ -160,7 +160,7 @@ export default {
   outline: none;
   appearance: none;
   border-radius: 0;
-  background-color: #bab5a1;
+  background-color: var(--color-button);
   color: inherit;
   font-family: inherit;
   letter-spacing: inherit;
@@ -191,22 +191,22 @@ export default {
   bottom: 0;
   left: 0;
   width: 0;
-  background-color: #454138;
+  background-color: var(--color-secondary);
   z-index: -1;
 }
 button:hover .icon {
-  background-color: #dcd8c0;
-  color: #454138;
-  border: 3px solid #dcd8c0;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border: 3px solid var(--color-primary);
 }
 .button:hover {
   background-color: transparent;
-  color: #dcd8c0;
+  color: var(--color-text-primary);
 }
 .button:hover:before {
   top: -0.2rem;
   bottom: -0.2rem;
-  border: solid #454138;
+  border: solid var(--color-secondary);
   border-width: 0.1rem 0;
 }
 .button:hover:after {
@@ -214,28 +214,28 @@ button:hover .icon {
 }
 
 .router-link-active .button {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
 }
 .router-link-active {
   animation: blink 1.6s infinite, expandbottomborder 0.2s;
-  color: #dcd8c0;
+  color: var(--color-text-primary-light);
   pointer-events: none;
   height: 40px;
 }
 .router-link-active .button .icon {
-  background-color: #dcd8c0;
-  color: #454138;
-  border: 3px solid #dcd8c0;
+  background-color: var(--color-primary);
+  color: var(--color-text-secondary);
+  border: 3px solid var(--color-primary);
 }
 @keyframes blink {
   0% {
-    background-color: #454138;
+    background-color: var(--color-secondary);
   }
   50% {
     background-color: #6b6557;
   }
   100% {
-    background-color: #454138;
+    background-color: var(--color-secondary);
   }
 }
 @keyframes expandbottomborder {
@@ -259,7 +259,7 @@ button:hover .icon {
   outline: none;
   appearance: none;
   border-radius: 0;
-  background-color: #bab5a1;
+  background-color: var(--color-button);
   color: inherit;
   font-family: inherit;
   letter-spacing: inherit;
@@ -290,17 +290,17 @@ button:hover .icon {
   bottom: 0;
   left: 0;
   width: 0;
-  background-color: #454138;
+  background-color: var(--color-secondary);
   z-index: -1;
 }
 .dropdownbtn:hover {
   background-color: transparent;
-  color: #dcd8c0;
+  color: var(--color-text-primary);
 }
 .dropdownbtn:hover:before {
   top: -0.2rem;
   bottom: -0.2rem;
-  border: solid #454138;
+  border: solid var(--color-secondary);
   border-width: 0.1rem 0;
 }
 .dropdownbtn:hover:after {
@@ -332,7 +332,7 @@ button:hover .icon {
   cursor: pointer;
 }
 .active {
-  color: #dcd8c0;
+  color: var(--color-text-primary-light);
   animation: blink 1.6s infinite;
 }
 .arabic .icon {
@@ -353,8 +353,5 @@ button:hover .icon {
 }
 .arabic .button:after {
   right: 0;
-}
-
-.busy {
 }
 </style>

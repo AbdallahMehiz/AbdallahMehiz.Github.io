@@ -27,7 +27,7 @@ export default {
 .button {
   padding: 0.5rem;
   font-size: 1em;
-  background-color: #bab5a1;
+  background-color: var(--color-button);
   cursor: pointer;
   transition-duration: 0.2s;
   transition-property: color, background-color, box-shadow;
@@ -55,26 +55,26 @@ export default {
   bottom: 0;
   left: 0;
   width: 0;
-  background-color: #454138;
+  background-color: var(--color-secondary);
   z-index: -1;
 }
 .button:hover {
   background-color: transparent;
-  color: #dcd8c0;
+  color: var(--color-primary);
 }
 .button:hover:before {
   top: -0.2rem;
   bottom: -0.2rem;
-  border: solid #454138;
+  border: solid var(--color-secondary);
   border-width: 0.1rem 0;
 }
 .button:hover:after {
   width: 100%;
 }
 .button:active {
-  color: #454138;
+  color: var(--color-secondary);
 }
 .button:active:after {
-  background-color: #dcd8c0;
+  background-color: var(--color-secondary);
 }
 </style>

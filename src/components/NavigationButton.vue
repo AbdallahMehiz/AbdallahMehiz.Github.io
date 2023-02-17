@@ -90,10 +90,10 @@ export default {
   display: flex;
   text-align: center;
   align-items: center;
-  background-color: #dcd8c0;
+  background-color: var(--color-primary);
   height: 60px;
   width: 60px;
-  border: solid 2px #454138;
+  border: solid 2px var(--color-secondary);
 }
 .button-content {
   position: absolute;
@@ -103,7 +103,7 @@ export default {
   height: 210px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  background-color: #dcd8c0;
+  background-color: var(--color-primary);
   padding: 8px;
 }
 .menu-item {
@@ -124,7 +124,7 @@ export default {
   height: 226px;
   display: grid;
   grid-template-rows: repeat(3, minmax(0, 1fr));
-  background-color: #dcd8c0;
+  background-color: var(--color-primary);
 }
 .dropdown-item {
   display: flex;
@@ -136,7 +136,7 @@ export default {
   width: 75px;
 }
 .dropdown-item.active {
-  background-color: #454138;
-  color: #dcd8c0;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 </style>

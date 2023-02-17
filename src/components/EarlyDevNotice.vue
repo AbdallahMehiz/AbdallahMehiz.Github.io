@@ -39,7 +39,7 @@ figure {
   flex-direction: column;
   margin: 0;
   margin-bottom: 1rem;
-  background-color: #dcd8c0;
+  background-color: var(--color-primary);
 }
 figure > :not(figcaption) {
   margin: 0.5rem;
@@ -53,10 +53,10 @@ figure > figcaption {
   order: -1;
   padding: 0.3rem 0.5rem 0rem 0.5rem;
   font-size: 1.2rem;
-  background-color: #a8a487;
-  color: #454138;
+  background-color: var(--color-secondary);
+  color: var(--color-text-primary);
 }
 iframe {
-  border: 0.1rem solid #bab5a1;
+  border: 0.1rem solid var(--color-secondary);
 }
 </style>

@@ -28,11 +28,11 @@ export default {
 }
 
 .wip {
-  background-color: #4b483e;
-  color: #a8a487;
+  background-color: var(--color-secondary);
+  color: var(--color-text-primary);
 }
 .arch {
-  background-color: #3f3b33;
-  color: #a8a487;
+  background-color: var(--color-secondary);
+  color: var(--color-text-primary);
 }
 </style>

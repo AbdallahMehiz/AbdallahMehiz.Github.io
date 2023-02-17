@@ -1,5 +1,5 @@
 <template>
-  <div style="border: 2px solid #454138; width: 25rem">
+  <div style="border: 2px solid var(--color-secondary); width: 25rem">
     <div class="project-container">
       <img :src="projectImage" />
       <h3 class="project-title">{{ projectTitle }}</h3>

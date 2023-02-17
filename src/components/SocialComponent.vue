@@ -42,14 +42,14 @@ a {
   transition: 300ms;
 }
 figure:hover {
-  background-color: #3f3b33;
+  background-color: var(--color-secondary);
 }
 figure:hover figcaption {
   transition: 100ms !important;
   font-weight: 600;
 }
 figure:hover .socials-icons {
-  color: #dcd8c0;
+  color: var(--color-text-primary-light);
 }
 figure {
   width: 100%;
@@ -79,8 +79,8 @@ figure > figcaption {
   padding: 0.2rem, 0rem;
   text-align: center;
   font-size: 1.2rem;
-  background-color: #3f3b33;
-  color: #bab5a1;
+  background-color: var(--color-secondary);
+  color: var(--color-text-primary);
   transition: 600ms;
 }
 </style>

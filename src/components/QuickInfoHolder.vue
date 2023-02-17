@@ -9,9 +9,9 @@
 <style>
 .info-holder {
   position: relative;
-  box-shadow: -3px 0 0 #454138, -9px 0 0 #dcd8c0, -21px 0 0 #454138,
-    -18px 3px 0 #979381, 3px 3px 0 #979381;
-  background-color: #dcd8c0;
+  box-shadow: -3px 0 0 var(--color-secondary), -9px 0 0 var(--color-primary),
+    -21px 0 0 var(--color-secondary), -18px 3px 0 #979381, 3px 3px 0 #979381;
+  background-color: var(--color-primary);
   padding: 0.5rem;
   margin: 0.3rem 0.2rem 0.3rem 1.3rem;
 }
@@ -21,11 +21,11 @@
   right: 0.3rem;
   width: 0.7rem;
   height: 0.7rem;
-  background-color: #454138;
+  background-color: var(--color-secondary);
 }
 .arabic .info-holder {
-  box-shadow: 3px 0 0 #454138, 9px 0 0 #dcd8c0, 21px 0 0 #454138,
-    -3px 3px 0 #979381, 3px 3px 0 #979381;
+  box-shadow: 3px 0 0 var(--color-secondary), 9px 0 0 var(--color-primary),
+    21px 0 0 var(--color-secondary), -3px 3px 0 #979381, 3px 3px 0 #979381;
   margin: 0.3rem 1.3rem 0.3rem 0.2rem;
 }
 .arabic .lil-brown-box {

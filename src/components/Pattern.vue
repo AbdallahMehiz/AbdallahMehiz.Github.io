@@ -21,7 +21,7 @@ body {
 }
 .pattern {
   grid-area: pattern;
-  border-top: 2px solid #4d493e;
+  border-top: 2px solid var(--color-secondary);
 }
 
 .pattern-inner {

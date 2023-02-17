@@ -61,7 +61,7 @@ export default {
 }
 .profilepic-container {
   grid-area: profilepic;
-  border: 3px solid #454138;
+  border: 3px solid var(--color-secondary);
   padding: 2px;
   display: flex;
   margin: auto;
@@ -70,7 +70,7 @@ export default {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  border: 2px solid #454138;
+  border: 2px solid var(--color-secondary);
   padding: 2px;
 }
 .generalinfo-container {

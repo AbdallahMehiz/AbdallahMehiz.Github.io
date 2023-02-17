@@ -32,7 +32,7 @@ figure {
   flex-direction: column;
   margin: 0;
   margin-bottom: 1rem;
-  background-color: #dcd8c0;
+  background-color: var(--color-primary);
   height: fit-content;
 }
 figure > :not(figcaption) {
@@ -42,8 +42,8 @@ figure > figcaption {
   order: -1;
   padding: 0 0.5rem 0 0.5rem;
   font-size: 1.2rem;
-  background-color: #3f3b33;
-  color: #a8a487;
+  background-color: var(--color-secondary);
+  color: var(--color-text-primary);
   align-items: center;
 }
 </style>

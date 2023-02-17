@@ -79,7 +79,7 @@ export default {
 }
 .media-type {
   background-color: rgba(69, 65, 56, 0.8);
-  color: #dcd8c0;
+  color: var(--color-primary);
   max-height: 250px;
   padding: 0 10px 10px 10px;
   box-shadow: 8px 10px 0px 1px rgba(168, 164, 135, 0.6);
@@ -107,7 +107,7 @@ export default {
 }
 .media-cover {
   grid-area: cover;
-  border: 2px solid #dcd8c0;
+  border: 2px solid var(--color-primary);
   padding: 3px;
   height: calc(5rem * 1.41); /* 1.41 vertical aspect ration of covers*/
   max-width: 5rem;
