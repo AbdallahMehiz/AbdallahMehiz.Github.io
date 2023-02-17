@@ -9,22 +9,46 @@
         Show Menu
       </div>
       <div v-if="showNavMenu" class="button-content">
-        <router-link @click="showNavMenu = !showNavMenu" class="menu-item" to="/">
+        <router-link
+          @click="showNavMenu = !showNavMenu"
+          class="menu-item"
+          to="/"
+        >
           <i class="icon icon-home"></i>Home
         </router-link>
-        <router-link @click="showNavMenu = !showNavMenu" class="menu-item" to="/feed">
+        <router-link
+          @click="showNavMenu = !showNavMenu"
+          class="menu-item"
+          to="/feed"
+        >
           <i class="icon icon-rss"></i>Feed
         </router-link>
-        <router-link @click="showNavMenu = !showNavMenu" class="menu-item" to="/media">
+        <router-link
+          @click="showNavMenu = !showNavMenu"
+          class="menu-item"
+          to="/media"
+        >
           <i class="icon icon-photo-film-music"></i>Media
         </router-link>
-        <router-link @click="showNavMenu = !showNavMenu" class="menu-item" to="/projects">
+        <router-link
+          @click="showNavMenu = !showNavMenu"
+          class="menu-item"
+          to="/projects"
+        >
           <i class="icon icon-folder"></i>Projects
         </router-link>
-        <router-link @click="showNavMenu = !showNavMenu" class="menu-item" to="/resume">
+        <router-link
+          @click="showNavMenu = !showNavMenu"
+          class="menu-item"
+          to="/resume"
+        >
           <i class="icon icon-document"></i>Resume
         </router-link>
-        <router-link @click="showNavMenu = !showNavMenu" class="menu-item" to="contact">
+        <router-link
+          @click="showNavMenu = !showNavMenu"
+          class="menu-item"
+          to="contact"
+        >
           <i class="icon icon-envelope"></i>Contact
         </router-link>
         <div
