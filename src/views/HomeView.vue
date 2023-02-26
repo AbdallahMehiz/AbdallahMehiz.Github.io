@@ -21,8 +21,8 @@
       </p>
     </div>
     <div class="generalinfo-container">
-      <QuickInfoHolder>Age: 19 </QuickInfoHolder>
-      <QuickInfoHolder>Time Zone: GMT+1</QuickInfoHolder>
+      <QuickInfoHolder>Age: {{ calculateAge(2003) }}</QuickInfoHolder>
+      <QuickInfoHolder>Time Zone: GMT+1({{ currentTime() }})</QuickInfoHolder>
       <QuickInfoHolder>Languages: Arabic, English, French</QuickInfoHolder>
     </div>
   </div>
@@ -36,6 +36,18 @@ export default {
   components: { QuickInfoHolder },
   setup() {
     return {};
+  },
+  methods: {
+    calculateAge(birthyear) {
+      let currentDate = new Date();
+      if (currentDate.getMonth() < 8)
+        return currentDate.getFullYear() - birthyear - 1;
+      else return currentDate.getFullYear() - birthyear;
+    },
+    currentTime() {
+      let currentTime = new Date();
+      return `${currentTime.getHours() + 1}:${currentTime.getMinutes()}`;
+    },
   },
 };
 </script>
