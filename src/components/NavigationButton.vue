@@ -11,7 +11,7 @@
       <div v-if="showNavMenu" class="button-content">
         <router-link
           @click="showNavMenu = !showNavMenu"
-          class="menu-item"
+          class="menu-item disabled"
           to="/"
         >
           <i class="icon icon-home"></i>Home
@@ -162,5 +162,9 @@ export default {
 .dropdown-item.active {
   background-color: var(--color-secondary);
   color: var(--color-primary);
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 </style>

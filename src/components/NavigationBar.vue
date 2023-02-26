@@ -2,10 +2,10 @@
   <div class="navigation-bar">
     <div class="items">
       <div class="fitem"></div>
-      <router-link class="item" to="/">
+      <router-link class="item disabled" to="/">
         <button class="button">
           <i class="icon-home icon"></i>
-          {{ $t("navigationbar.home") }}
+          Mehiz.Tech
         </button>
       </router-link>
       <router-link class="item" to="/feed">
@@ -353,5 +353,9 @@ button:hover .icon {
 }
 .arabic .button:after {
   right: 0;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.8;
 }
 </style>
