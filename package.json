@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp -r ./assets dist/ && echo 'Abdallah.mehiz.tech' > dist/CNAME",
+    "build": "vite build && cp -r ./assets dist/ && echo 'Abdallah.mehiz.xyz' > dist/CNAME",
     "preview": "vite preview"
   },
   "dependencies": {
