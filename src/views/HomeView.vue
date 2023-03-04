@@ -46,7 +46,15 @@ export default {
     },
     currentTime() {
       let currentTime = new Date();
-      return `${currentTime.getHours().toString().length == 1 ? "0" + currentTime.getHours() : currentTime.getHours()}:${currentTime.getMinutes().toString().length == 1 ? "0" + currentTime.getMinutes() : currentTime.getMinutes()}`;
+      return `${
+        currentTime.getHours().toString().length == 1
+          ? "0" + currentTime.getHours()
+          : currentTime.getHours()
+      }:${
+        currentTime.getMinutes().toString().length == 1
+          ? "0" + currentTime.getMinutes()
+          : currentTime.getMinutes()
+      }`;
     },
   },
 };
@@ -100,4 +108,5 @@ export default {
   align-items: center;
   grid-area: info;
   text-align: center;
-}</style>
+}
+</style>

@@ -12,7 +12,10 @@ import NavigationButton from "./components/NavigationButton.vue";
     <NavigationButton class="navigation-button" />
     <NavPattern class="footer" />
   </div>
-  <p style="text-align: center; margin: 0.5rem 0;">Inspired by Nier Automata, made by Abdallah Mehiz using <i class="icon icon-vuejs"></i></p>
+  <p style="text-align: center; margin: 0.5rem 0">
+    Inspired by Nier Automata, made by Abdallah Mehiz using
+    <i class="icon icon-vuejs"></i>
+  </p>
 </template>
 
 <style scoped>
