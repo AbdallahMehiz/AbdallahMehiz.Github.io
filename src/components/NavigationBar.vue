@@ -5,7 +5,7 @@
       <router-link class="item disabled" to="/">
         <button class="button">
           <i class="icon-home icon"></i>
-          Mehiz.Tech
+          Mehiz.xyz
         </button>
       </router-link>
       <router-link class="item" to="/feed">

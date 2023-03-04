@@ -46,7 +46,7 @@ export default {
     },
     currentTime() {
       let currentTime = new Date();
-      return `${currentTime.getHours() + 1}:${currentTime.getMinutes()}`;
+      return `${currentTime.getHours()}:${currentTime.getMinutes()}`;
     },
   },
 };
