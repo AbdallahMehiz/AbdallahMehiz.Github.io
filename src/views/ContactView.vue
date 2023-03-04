@@ -31,7 +31,6 @@ import socials from "../assets/data/socials.json";
 export default {
   name: "ContactView",
   data: () => {
-    console.log(socials);
     return {
       socials: socials.socials,
     };

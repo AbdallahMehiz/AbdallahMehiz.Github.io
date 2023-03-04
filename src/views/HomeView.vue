@@ -46,7 +46,7 @@ export default {
     },
     currentTime() {
       let currentTime = new Date();
-      return `${currentTime.getHours()}:${currentTime.getMinutes()}`;
+      return `${currentTime.getHours().toString().length == 1 ? "0" + currentTime.getHours() : currentTime.getHours()}:${currentTime.getMinutes().toString().length == 1 ? "0" + currentTime.getMinutes() : currentTime.getMinutes()}`;
     },
   },
 };
@@ -62,6 +62,7 @@ export default {
     "generalinfo info info info info info info info";
   grid-gap: 20px;
 }
+
 @media (max-width: 1000px) {
   .HomeView {
     grid-template-columns: repeat(1, 1fr);
@@ -71,6 +72,7 @@ export default {
       "info";
   }
 }
+
 .profilepic-container {
   grid-area: profilepic;
   border: 3px solid var(--color-secondary);
@@ -78,6 +80,7 @@ export default {
   display: flex;
   margin: auto;
 }
+
 .profilepic-container img {
   width: 300px;
   height: 300px;
@@ -85,9 +88,11 @@ export default {
   border: 2px solid var(--color-secondary);
   padding: 2px;
 }
+
 .generalinfo-container {
   grid-area: generalinfo;
 }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -95,5 +100,4 @@ export default {
   align-items: center;
   grid-area: info;
   text-align: center;
-}
-</style>
+}</style>

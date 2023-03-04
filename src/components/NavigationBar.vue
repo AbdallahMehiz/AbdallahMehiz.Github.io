@@ -2,7 +2,7 @@
   <div class="navigation-bar">
     <div class="items">
       <div class="fitem"></div>
-      <router-link class="item disabled" to="/">
+      <router-link class="item" to="/">
         <button class="button">
           <i class="icon-home icon"></i>
           Mehiz.xyz
